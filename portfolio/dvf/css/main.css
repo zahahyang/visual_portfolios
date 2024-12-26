@@ -1,0 +1,603 @@
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 950px;
+  background-color: #ffffff;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.mainBg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -475px;
+  z-index: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  width: 950px;
+}
+.sticky-top{
+  width: 950px;
+  margin: 0 auto;
+}
+.bg-sk{
+  background-color: #002c57;
+}
+a.navbar-brand{
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.index {
+  width: 950px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+  margin: 0 auto;
+  min-height: 1300px;
+}
+
+
+/*------------------------------ transition---------------------------------*/
+.btn_goTop, .btn_goTop span, .demo_show li a {
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+}
+/*----------------pd_sidebar---------------------*/
+
+.pd_sidebar{
+	position:fixed;
+	width:400px;
+	height: 100%;
+	top:0;
+	right:-400px;
+	background-color: rgba(0,0,0,.85);
+	z-index: 900;
+}
+.pd_sidebar.open{
+	right:0;
+}
+.pd_sidebar ul {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 10%;
+    left: 15%;
+    border: #E62328 2px solid;
+    /*overflow: scroll;*/
+    padding: 20px 0 0 10px;
+    border-width: 3px 0 0 0;
+}
+.pd_sidebar ul li{
+	position: relative;
+	width:100%;
+	height: 20px;
+	top:0;
+	left:0;
+	margin-bottom: 15px;
+}
+.pd_sidebar ul li a{
+	color:#FFF;
+	font-size:20px;
+	display: block;
+}
+.pd_sidebar_close {
+	position: absolute;
+    width: 35px;
+	left: 35%;
+	top: 33px;
+	margin-left: -17px;
+	z-index: 9;
+}
+.pd_sidebar_close span{
+	color: #FFF;
+	width: 100px;
+	display: block;
+	left: 50px;
+	position: absolute;
+	top: 4px;
+}
+.pd_sidebar ul li:hover a{
+	color:#FF0;
+}
+.pd_sidebar ul li.pd_sidebar_1{
+	margin-bottom: 25px;
+}
+.pd_sidebar ul li.pd_sidebar_6{
+	margin-top: 80px;
+	margin-bottom: 25px;
+}
+.pd_sidebar ul li.pd_sidebar_1 a, .pd_sidebar ul li.pd_sidebar_6 a{
+	font-size:22px;
+	color:#FF0;
+}
+.pd_sidebar ul li.pd_sidebar_1:hover a, .pd_sidebar ul li.pd_sidebar_6:hover a{
+	color:#FF0;
+}
+.pd_sidebar ul li.pd_sidebar_1 span, .pd_sidebar ul li.pd_sidebar_6 span {
+    position: absolute;
+	left: 0px;
+	top: 44px;
+    color: #80E7FF;
+    font-size: 20px;
+}
+.navBtn{
+	display: block;
+	position: fixed;
+	width: 180px;
+	top: 30%;
+	right: -40px;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	z-index: 99;
+}
+.navBtn.open{
+	right: -150px;
+}
+.navBtn:hover {
+   right: -20px;
+}
+
+/*------------------------------ Opening--------------------------------------*/
+
+.opening{
+  position: relative;
+  background-image:url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1672px;
+  background-size: contain;
+}
+.DNF_MOUSE{
+  position: absolute;
+  left: 42%;
+  top: 13%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+@keyframes scalebig {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.slogan{
+  position: absolute;
+  left: 17%;
+  top: 39%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+.sub-slogan{
+  position: absolute;
+  left: 23%;
+  top: 48%;
+}
+/*------------------------------ About DVF--------------------------------------*/
+
+.about_dvf{
+  position: relative;
+  background-image:url(../images/diane-inf.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1861px;
+  background-size: contain;
+}
+.label1{
+  position: absolute;
+  right: 0;
+  top:5%;
+}
+.Diane_person{
+  position: absolute;
+  right: 0;
+  top:17%;
+}
+.big-mouse{
+  position: absolute;
+  right: 9%;
+  top: 73%;
+}
+/*------------------------------ idea DVF--------------------------------------*/
+
+.idea_bg{
+  position: relative;
+  background-image:url(../images/idea-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1088px;
+  background-size: contain;
+}
+.sk-texture{
+  position: absolute;
+  left: 8%;
+  top: 15%;
+}
+.idea-slogan{
+  position: absolute;
+  left: 8%;
+  top: 55%;
+}
+.soulmate-bg{
+  position: relative;
+  background-image:url(../images/soulmate-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 724px;
+  background-size: contain;
+}
+.soulmate-pic{
+  position: absolute;
+  left: 5%;
+  top: 7%;
+}
+.idea-mouse{
+  position: absolute;
+  right:5%;
+  top: 90%;
+  z-index: 100;
+  animation: move 2s linear infinite;
+  -webkit-animation: move 2s linear infinite;
+  -moz-animation: move 2s linear infinite;
+}
+
+
+/*------------------------------ Travel DVF--------------------------------------*/
+
+.travel-bg{
+  position: relative;
+  background-image:url(../images/travel-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2248px;
+  background-size: contain;
+}
+.color-sq{
+  position: absolute;
+  top:4%;
+  left: 0%;
+  z-index: 100;
+}
+.other-colormouse{
+  position: absolute;
+  top: 36%;
+  right: 0%;
+  animation: move 2s linear infinite;
+  -webkit-animation: move 2s linear infinite;
+  -moz-animation: move 2s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(0,0);
+  }
+
+  20% {
+    transform: translate(0,20px);
+  }
+
+  40% {
+    transform: translate(0,25px);
+  }
+  60% {
+    transform: translate(0,25px);
+  }
+  80% {
+    transform: translate(0,20px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+.travel-product-bg{
+  position: absolute;
+  height: 950px;
+  top:55%;
+  left: 0%;
+  z-index: 99;
+}
+.readmore-left{
+  position: absolute;
+  top: 93%;
+  left: 13%;
+  z-index: 100;
+}
+.readmore-right{
+  position: absolute;
+  top: 93%;
+  right: 16%;
+  z-index: 100;
+}
+
+/*------------------------------ Exercise DVF--------------------------------------*/
+
+.exercise-bg{
+  position: relative;
+  background-image:url(../images/exercise-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2160px;
+  background-size: contain;
+}
+.heart{
+  position: absolute;
+  right: 10%;
+  top: 12%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+.shoes{
+  position: absolute;
+  right: 10%;
+  top: 46%;
+  animation: rotate 3s linear infinite;
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  40% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+.flykiss{
+  position: absolute;
+  left: 47%;
+  top: 51%;
+}
+.sk-blue-texture{
+  position: absolute;
+  right: 0;
+  top: 57%;
+}
+.sk-red-texture{
+  position: absolute;
+  left: 0;
+  top: 57%;
+}
+.exercies-left{
+  position: absolute;
+  left:8%;
+  top: 59%;
+}
+.exercies-right{
+  position: absolute;
+  right: 7.5%;
+  top: 59%;
+}
+.readmore{
+  position: absolute;
+  top:93%;
+  left: 30%;
+}
+/*------------------------------ No mind DVF--------------------------------------*/
+
+.nomind-bg{
+  position: relative;
+  background-image:url(../images/nomind-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2679px;
+  background-size: contain;
+}
+.threemouse{
+  position: absolute;
+  left: 10%;
+  top:27%;
+}
+.nomind-tilte{
+  position: absolute;
+  right: 0;
+  top:41%;
+  z-index: 99;
+
+}
+.blue-button1{
+  position: absolute;
+  right: 37px;
+  top:40%;
+  z-index: 100;
+}
+.nomind-left{
+  position: absolute;
+  left: 17%;
+  top:96%;
+  z-index: 100;
+}
+.nomind-right{
+  position: absolute;
+  right: 17%;
+  top:96%;
+  z-index: 100;
+}
+/*------------------------------ Be With you DVF--------------------------------------*/
+
+.bewithyou-bg{
+  position: relative;
+  background-image:url(../images/bewithyou-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2020px;
+  background-size: contain;
+}
+.dvfmouse{
+  position: absolute;
+  right: 10%;
+  top: 51%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+.bewithyou-left{
+  position: absolute;
+  left: 17%;
+  top:93%;
+  z-index: 100;
+}
+.bewithyou-right{
+  position: absolute;
+  right: 17%;
+  top:93%;
+  z-index: 100;
+}
+/*------------------------------ Eat DVF--------------------------------------*/
+
+.eat-bg{
+  position: relative;
+  background-image:url(../images/eat-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2300px;
+  background-size: contain;
+}
+.eatmouse{
+  position: absolute;
+  right: 6%;
+  top: 46%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+.eat-left{
+  position: absolute;
+  left: 12%;
+  top:93%;
+  z-index: 100;
+}
+.eat-right{
+  position: absolute;
+  right: 16%;
+  top:93%;
+  z-index: 100;
+}
+/*------------------------------ It's You DVF--------------------------------------*/
+
+.you-bg{
+  position: relative;
+  background-image:url(../images/you-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1126px;
+  background-size: contain;
+}
+.friend{
+  position: absolute;
+  left: 20%;
+  top:14%;
+}
+/*------------------------------ Ending DVF--------------------------------------*/
+
+.ending-bg{
+  position: relative;
+  background-image:url(../images/ending.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1880px;
+  background-size: contain;
+}
+.store{
+  position: absolute;
+  left: 12%;
+  top:90%;
+  z-index: 100;
+}
+.sales{
+  position: absolute;
+  right: 13%;
+  top:90%;
+  z-index: 100;
+}
+/*------------------------------ Footer--------------------------------------*/
+.footer{
+  position: relative;
+  background-image:url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 363px;
+  background-size: contain;
+}
+.sk-logo{
+  position: absolute;
+  left: 17%;
+  top:24%;
+}
+.copyright{
+  position: absolute;
+  left: 16%;
+  top:73%;
+}
+
+
+/*---------------------------btn_goTop---------------------------*/
+.btn_goTop {
+  position: fixed !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: #0063ba;
+  bottom: 10px;
+  left: 50%;
+  margin-left: 480px;
+  z-index: 999;
+  display: block;
+}
+
+.btn_goTop span {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 21px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -17px;
+  background-image: url(../images/goTop.png);
+}
+
+.btn_goTop:hover {
+  background-color: rgb(255, 185, 192);
+}
+
+.btn_goTop:hover.btn_goTop span {
+  margin: -15px 0 0 -17px;
+}

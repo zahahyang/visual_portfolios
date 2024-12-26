@@ -1,0 +1,1098 @@
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 950px;
+  background-color: #212529;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.mainBg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -475px;
+  z-index: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  width: 950px;
+}
+.sticky-top{
+  width: 950px;
+  margin: 0 auto;
+}
+.bg-sk{
+  background-color: #002c57;
+}
+a.navbar-brand{
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.index {
+  width: 950px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+  margin: 0 auto;
+  min-height: 1300px;
+}
+
+
+/*------------------------------ transition---------------------------------*/
+.btn_goTop, .btn_goTop span, .demo_show li a {
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+}
+/*----------------------------------Header----------------------------*/
+.opening{
+  position: relative;
+  background-image:url(../images/main_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1628px;
+  background-size: contain;
+}
+.sk_logo{
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  z-index: 200;
+}
+.main_logo{
+  position: absolute;
+  top: 15%;
+  left: 16%;
+  z-index: 200;
+}
+.main_one{
+  position: relative;
+  background-image:url(../images/information_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1690px;
+  background-size: contain;
+  z-index: 199;
+}
+.main_vector{
+  position: absolute;
+  right: 0;
+  top: -2%;
+  z-index: 200;
+}
+.arrow_right{
+  position: absolute;
+  right: 38%;
+  top:8%;
+  z-index: 200;
+}
+.arrow_right img{
+  width: 336px;
+}
+.about_title{
+  position: absolute;
+  right: 6%;
+  top: 17%;
+  z-index: 200;
+}
+.about_infomation{
+  position: absolute;
+  right: 15%;
+  top: 36%;
+  z-index: 200;
+}
+.arrow_back{
+  position: absolute;
+  left: 8%;
+  top: 30%;
+  z-index: 200;
+}
+.arrow_back img{
+  width: 40px;
+}
+.main_vector1{
+  position: absolute;
+  left: 0;
+  top: 90%;
+  z-index: 200;
+}
+/*------------------------------愛與未來-Video1--------------------------*/
+.video1{
+  position: relative;
+  background-image:url(../images/video1_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1414px;
+  background-size: contain;
+  z-index: 199;
+}
+.love_line{
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  z-index: 200;
+}
+.video1_vector{
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  z-index: 200;
+}
+.video_frame1_top{
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  z-index: 202;
+}
+.video_frame1_right{
+  position: absolute;
+  top: 42%;
+  right: 3%;
+  z-index: 202;
+}
+
+.video_frame1_bottom{
+  position: absolute;
+  top: 69.3%;
+  left: 16%;
+  z-index: 202;
+}
+
+.video_frame1_left{
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  z-index: 202;
+}
+
+
+
+.video_1{
+  position: absolute;
+  top: 39%;
+  right: 8%;
+  z-index: 201;
+}
+.love_line1{
+  position: absolute;
+  top: 81%;
+  right: 5%;
+  z-index: 200;
+}
+.love_line2{
+  position: absolute;
+  top: 81%;
+  right: 25%;
+  z-index: 200;
+}
+.love_line3{
+  position: absolute;
+  top: 81%;
+  right: 45%;
+  z-index: 200;
+}
+/*------------------------------Love--------------------------*/
+.love_bg{
+  position: relative;
+  background-image:url(../images/love_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1875px;
+  background-size: contain;
+  z-index: 199;
+}
+.love_main_pic{
+  position: absolute;
+  top: 16%;
+  right: -4%;
+  z-index: 200;
+}
+.plus_animate1{
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  z-index: 200;
+}
+.contour_line1{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 200;
+}
+.lovecolor{
+  position: absolute;
+  top: 8%;
+  right: 39%;
+  z-index: 201;
+}
+.love_title{
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  z-index: 202;
+}
+.love_text{
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  z-index: 202;
+}
+.contour_line2_1{
+  position: absolute;
+  top: 60%;
+  left: 0;
+  z-index: 197;
+}
+.plus_animate2{
+  position: absolute;
+  top: 91%;
+  right: 5%;
+  z-index: 200;
+}
+.LoveisLove{
+  position: absolute;
+  top: 92%;
+  left: 18%;
+  z-index: 201;
+}
+/*------------------------------Love information- -------------------------*/
+.love_information1_bg{
+  position: relative;
+  background-image:url(../images/love_information1_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 3629px;
+  background-size: contain;
+  z-index: 195;
+}
+.red_left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 199;
+}
+.layer1{
+  position: absolute;
+  top: 8%;
+  left: 14%;
+  z-index: 200;
+}
+.men_1{
+  position: absolute;
+  top: 8%;
+  right: -11%;
+}
+.circle_1{
+  position: absolute;
+  right: 0;
+  top: -3%;
+  z-index: 201;
+}
+.texture_bubble{
+  position: absolute;
+  right: 5%;
+  top: 6%;
+  z-index: 202;
+}
+.loveline_1{
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  z-index: 202;
+}
+.green_texture1{
+  position: absolute;
+  z-index: 202;
+  right: 18.7%;
+  top: 28%;
+}
+.green_texture1 img{
+  width: 35px;
+}
+.green_texture2{
+  position: absolute;
+  z-index: 202;
+  right: 18.7%;
+  top: 23%;
+}
+.green_texture2 img{
+  width: 35px;
+}
+.buy_button{
+  position: absolute;
+  z-index: 202;
+  top: 33%;
+  right: 18.7%;
+}
+.layer2{
+  position: absolute;
+  top: 23%;
+  right: 5%;
+  z-index: 196;
+}
+.men_2{
+  position: absolute;
+  top: 23%;
+  right: 7%;
+  z-index: 197;
+}
+.future_arcline1{
+  position: absolute;
+  z-index: 198;
+  right: 9%;
+  top: 23%;
+}
+.contour_line2{
+  position: absolute;
+  z-index: 203;
+  left: 0;
+  top: 29%;
+}
+.red_right{
+  position: absolute;
+  z-index: 195;
+  right: 0;
+  top: 34%;
+}
+.red_right_2{
+  position: absolute;
+  z-index: 195;
+  right: 0;
+  top:48%;
+}
+.layer3{
+  position: absolute;
+  top: 51%;
+  left: 19%;
+  z-index: 200;
+}
+.women_1{
+  position: absolute;
+  top: 51%;
+  right: 17%;
+  z-index: 200;
+}
+.circle_2{
+  position: absolute;
+  left: 0;
+  top: 46%;
+  z-index: 200;
+}
+.texture_bubble_1{
+  position: absolute;
+  left: 0;
+  top: 53%;
+  z-index: 202;
+}
+.red_loveline{
+  position: absolute;
+  top: 51%;
+  right: 5%;
+  z-index: 202;
+}
+.red_texture_back1{
+  position: absolute;
+  z-index: 202;
+  left: 21%;
+  top: 70.5%;
+}
+.red_texture_back1 img{
+  width: 35px;
+}
+.red_texture_back2{
+  position: absolute;
+  z-index: 202;
+  left: 21%;
+  top: 66%;
+}
+.red_texture_back2 img{
+  width: 35px;
+}
+.buy_button_1{
+  position: absolute;
+  z-index: 202;
+  top: 75.6%;
+  right: 18.7%;
+}
+.layer4{
+  position: absolute;
+  top: 71%;
+  left: 5%;
+  z-index: 196;
+}
+.women_2{
+  position: absolute;
+  top: 72%;
+  left: 7.8%;
+  z-index: 197;
+}
+.blue_loveline{
+  position: absolute;
+  z-index: 198;
+  left: 6%;
+  top: 70%;
+}
+.contour_line3{
+  position: absolute;
+  z-index: 197;
+  right: 0;
+  top: 83%;
+}
+.red_left_2{
+  position: absolute;
+  z-index: 195;
+  left: 0;
+  top: 85%;
+}
+/*------------------------------Future--------------------------*/
+.future_bg{
+  position: relative;
+  background-image:url(../images/future_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 3975px;
+  background-size: contain;
+  z-index: 197;
+}
+.future_main_bg{
+  position: absolute;
+  top: -1%;
+  right: 0%;
+  z-index: 200;
+}
+.future_women_1{
+  position:absolute;
+  top: 5%;
+  right: -11.3%;
+}
+.future_icon{
+  position: absolute;
+  top: 2.5%;
+  right: 31%;
+  z-index: 202;
+}
+.future_texture_back{
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  z-index: 202;
+}
+.future_texture_back img{
+  width: 40px;
+}
+.future_texture_top{
+  position: absolute;
+  top: 15.2%;
+  right: 4.5%;
+  z-index: 202;
+}
+.future_texture_top img{
+  width: 40px;
+}
+.future_title{
+  position: absolute;
+  top: 32%;
+  left: 20%;
+  z-index: 202;
+}
+.future_text{
+  position: absolute;
+  top: 38%;
+  left: 11%;
+  z-index: 202;
+}
+.red_square_1{
+  position: absolute;
+  left: 0;
+  top: 47%;
+  z-index: 199;
+}
+.future_single_1_bg{
+  right: 4%;
+  position: absolute;
+  z-index: 198;
+  top: 52.5%;
+}
+.future_women_2{
+  right: 6%;
+  position: absolute;
+  z-index: 199;
+  top: 53%;
+}
+.future_arcline1{
+  position: absolute;
+  left: 29.5%;
+  top: 57%;
+  z-index: 199;
+}
+.fuure_texture1{
+  position: absolute;
+  left: 29.5%;
+  top: 68.5%;
+  z-index: 199;
+}
+.fuure_texture1 img{
+  width: 55px;
+}
+.future_happ_button{
+  position: absolute;
+  left: 37.5%;
+  top: 73.8%;
+  z-index: 199;
+}
+.future_single_2_bg{
+  left: 4%;
+  position: absolute;
+  z-index: 197;
+  top: 73.5%;
+}
+.future_women_3{
+  left: 6%;
+  position: absolute;
+  z-index: 197;
+  top: 74%;
+}
+.future_arcline_2 {
+  position: absolute;
+  left: 0;
+  top: 94%;
+  z-index: 198;
+}
+.future_slash_back{
+  position: absolute;
+  left: 63%;
+  top: 79%;
+  z-index: 198;
+}
+.future_slash_back img{
+  width: 60px;
+}
+
+/*------------------------------Video 2 --------------------------*/
+.video2_bg{
+  position: relative;
+  background-image:url(../images/video2_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 940px;
+  background-size: contain;
+  z-index: 197;
+}
+
+.video_frame2_top{
+  position: absolute;
+  top: 12.5%;
+  right: 3%;
+  z-index: 202;
+}
+.video_frame2_right{
+  position: absolute;
+  top: 29.5%;
+  right: 3%;
+  z-index: 202;
+}
+
+.video_frame2_bottom{
+  position: absolute;
+  top: 71.5%;
+  right: 4%;
+  z-index: 202;
+}
+
+.video_frame2_left{
+  position: absolute;
+  top: 38.5%;
+  left: 3%;
+  z-index: 202;
+}
+.video_2{
+  position: absolute;
+  top: 26%;
+  right: 8%;
+  z-index: 201;
+}
+
+/*-------------------------Happy --------------------------*/
+.happy_bg{
+  position: relative;
+  background-image:url(../images/happy_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 6893px;
+  background-size: contain;
+  z-index: 195;
+}
+.purple_head_bg{
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  z-index: 196;
+}
+.happy_tilte_1{
+  position: absolute;
+  top: 1.5%;
+  left: 16.5%;
+  z-index: 197;;
+}
+.heart_graffi{
+  position: absolute;
+  right: 9%;
+  top: 2%;
+  z-index: 196;
+}
+.crown_graffi{
+  position: absolute;
+  left: 4%;
+  top: 3.5%;
+  z-index: 196;
+}
+.happy_text{
+  position: absolute;
+  left: 5.5%;
+  top: 5.5%;
+  z-index: 197;
+}
+.happy_together_1{
+  position:absolute;
+  left: 6.5%;
+  top: 12%;
+}
+.skateboard_draw{
+  position: absolute;
+  top: 28%;
+  right: 8%;
+  z-index: 201;
+
+}
+.happymen_up_bg{
+  position: absolute;
+  top: 33%;
+  z-index: 199;
+}
+.happy_men_up{
+  position: absolute;
+  top: 15.8%;
+  left: 7%;
+}
+.happymen_down_bg{
+  position: absolute;
+  top: 40%;
+  right: 0;
+  z-index: 197;
+}
+.happy_men_down{
+  position: absolute;
+  top: 41.5%;
+  right: 4%;
+  z-index: 198;
+}
+.white_texture_back_back.happy{
+  position: absolute;
+  top: 50.5%;
+  left: 40%;
+  z-index: 198;
+}
+
+.happy img{
+  width: 40px;
+}
+.happy.one{
+  top: 47.5%;
+  left: 40%;
+  z-index: 198;
+}
+.happy_button{
+  position: absolute;
+  top: 52.3%;
+  left: 46%;
+  z-index: 198;
+}
+.forever_1{
+  position: absolute;
+  top: 43.5%;
+  left: 32%;
+  z-index: 200;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+}
+.hearts_1{
+  position: absolute;
+  top: 48%;
+  left: 15%;
+  z-index: 197;
+}
+.happymen_w_up_bg{
+  position: absolute;
+  top: 55%;
+  z-index: 199;
+}
+.happy_women_up{
+  position: absolute;
+  top: 26%;
+  left: 7%;
+}
+.happymen_w_down_bg{
+  position: absolute;
+  top: 63%;
+  right: 0;
+  z-index: 196;
+}
+.happy_women_down{
+  position: absolute;
+  top: 22%;
+  right: -41%;
+}
+.white_texture_back_back.happy1{
+  position: absolute;
+  top: 73.5%;
+  left: 40%;
+  z-index: 198;
+}
+.happy.one{
+  top: 70.5%;
+  left: 40%;
+  z-index: 198;
+}
+.happy1 img{
+  width: 40px;
+}
+.happy_button.women{
+  position: absolute;
+  top: 75.5%;
+  left: 46%;
+  z-index: 198;
+}
+.hearts_2{
+  position: absolute;
+  top: 69%;
+  left: 10%;
+  z-index: 197;
+}
+.hearts_3{
+  position: absolute;
+  top: 72%;
+  left: 10%;
+  z-index: 197;
+}
+.graffi_draw{
+  position: absolute;
+  top: 79%;
+  right: 0;
+  z-index: 197;
+}
+.shoes_crown{
+  position: absolute;
+  top: 24%;
+  left: 19%;
+}
+
+.shoes_crown-all{
+  position: absolute;
+  top: 90.3%;
+  left: 0;
+  z-index: 200;
+}
+.shoes_button{
+  position: absolute;
+  right: 11%;
+  top: 86.5%;
+  z-index: 197;
+}
+.graffi_draw_photo{
+  position: absolute;
+  top: 89%;
+  right: 0;
+  z-index: 197;
+}
+/*-------------------------Dream--------------------------*/
+.dream_bg{
+  position: relative;
+  background-image:url(../images/dream_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 5131px;
+  background-size: contain;
+  z-index: 195;
+}
+.dream_main_bg{
+  position: absolute;
+  left: 5%;
+  top: 1%;
+  z-index: 196;
+}
+.dream_tilte{
+  position: absolute;
+  top: 3.5%;
+  left: 21.5%;
+  z-index: 197;
+}
+.dream_text{
+  position: absolute;
+  left:20%;
+  top: 9%;
+  z-index: 197;
+}
+.music_3{
+  position: absolute;
+  top: 3%;
+  left: 45%;
+  z-index: 197;
+}
+.music_4{
+  position: absolute;
+  top: 3%;
+  left: 17%;
+  z-index: 197;
+}
+.music_5{
+  position: absolute;
+  top: 9%;
+  right: 21%;
+  z-index: 197;
+}
+.music_6{
+  position: absolute;
+  top: 6%;
+  left: 12%;
+  z-index: 197;
+}
+.music_7{
+  position: absolute;
+  top: 14%;
+  left: 17%;
+  z-index: 197;
+}
+.music_8{
+  position: absolute;
+  top: 14%;
+  right: 17%;
+  z-index: 197;
+}
+.dream_together_1{
+  position:absolute;
+  left: 8.5%;
+  top: 18%;
+}
+.dream_slogan_1{
+  position: absolute;
+  left: 18%;
+  top: 39%;
+  z-index: 200;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+}
+.dream_slogan_1 img{
+  width: 586px;
+}
+.five_line_1{
+  position: absolute;
+  left: 0;
+  top: 56%;
+  z-index: 197;
+}
+.dream_single_bg{
+  position: absolute;
+  left: 14%;
+  top: 47%;
+  z-index: 198;
+}
+.dream_singing{
+  position: absolute;
+  left: 16%;
+  top: 24%;
+}
+.dream_buy_button{
+  position: absolute;
+  top: 68%;
+  left: 13%;
+  z-index: 197;
+}
+.five_line_2{
+  position: absolute;
+  left: 0;
+  top: 73%;
+  z-index: 197;
+}
+.dreamlist{
+  position: absolute;
+  top: 73.9%;
+  left: 0;
+  z-index: 200;
+}
+.five_line_3{
+  position: absolute;
+  left: 0;
+  top: 86.5%;
+  z-index: 197;
+}
+.music_animate{
+  position: absolute;
+  top: 92%;
+  left: -12%;
+  z-index: 197;
+}
+/*------------------------------ Ending--------------------------------------*/
+.ending{
+  position: relative;
+  background-image:url(../images/ending.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 488px;
+  background-size: contain;
+}
+/*------------------------------ Footer--------------------------------------*/
+.footer{
+  position: relative;
+  background-image:url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 363px;
+  background-size: contain;
+}
+.sk-logo{
+  position: absolute;
+  left: 17%;
+  top:24%;
+}
+.copyright{
+  position: absolute;
+  left: 16%;
+  top:73%;
+}
+
+
+
+/*---------------------------btn_goTop---------------------------*/
+.btn_goTop {
+  position: fixed !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: #0063ba;
+  bottom: 10px;
+  left: 50%;
+  margin-left: 480px;
+  z-index: 999;
+  display: block;
+}
+
+.btn_goTop span {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 21px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -17px;
+  background-image: url(../images/goTop.png);
+}
+
+.btn_goTop:hover {
+  background-color: rgb(255, 185, 192);
+}
+
+.btn_goTop:hover.btn_goTop span {
+  margin: -15px 0 0 -17px;
+}
+/*----------------pd_sidebar---------------------*/
+
+.pd_sidebar{
+	position:fixed;
+	width:400px;
+	height: 100%;
+	top:0;
+	right:-400px;
+	background-color: rgba(0,0,0,.85);
+	z-index: 900;
+}
+.pd_sidebar.open{
+	right:0;
+}
+.pd_sidebar ul {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 15%;
+    left: 15%;
+    /*overflow: scroll;*/
+    padding: 20px 0 0 10px;
+    border-width: 3px 0 0 0;
+}
+.pd_sidebar ul li{
+	position: relative;
+	width:100%;
+	height: 60px;
+	top:0;
+	left:0;
+	margin-bottom: 30px;
+}
+.pd_sidebar ul li a{
+	color:#FFF;
+	font-size:20px;
+	display: block;
+}
+.pd_sidebar_close {
+  position: absolute;
+  width: 65%;
+  left: 21%;
+  top: 60px;
+  margin-left: -17px;
+  z-index: 9;
+}
+.pd_sidebar_close span{
+	color: #FFF;
+	width: 100px;
+	display: block;
+	left: 50px;
+	position: absolute;
+	top: 4px;
+}
+.pd_sidebar ul li:hover a{
+	color:#FF0;
+}
+.pd_sidebar ul li.pd_sidebar_1 a, .pd_sidebar ul li.pd_sidebar_6 a{
+	font-size:22px;
+	color:#FF0;
+}
+.pd_sidebar ul li.pd_sidebar_1:hover a, .pd_sidebar ul li.pd_sidebar_6:hover a{
+	color:#FF0;
+}
+.pd_sidebar ul li.pd_sidebar_1 span, .pd_sidebar ul li.pd_sidebar_6 span {
+    position: absolute;
+	left: 0px;
+	top: 44px;
+    color: #80E7FF;
+    font-size: 20px;
+}
+.navBtn{
+	display: block;
+	position: fixed;
+	width: 110px;
+	top: 30%;
+	right: -18px;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	z-index: 99;
+}
+.navBtn.open{
+	right: -150px;
+}
+.navBtn:hover {
+   right: -20px;
+}
+@media screen and (max-width:768px){
+  .pd_sidebar {
+      position: fixed;
+      width: 80%;
+      height: 80%;
+      top: 0;
+      right: -400px;
+      background-color: rgba(0,0,0,.85);
+      z-index: 900;
+      margin-right: 10%;
+      margin-top: 10%;
+  }
+}

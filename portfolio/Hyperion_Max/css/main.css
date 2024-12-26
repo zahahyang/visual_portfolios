@@ -1,0 +1,1222 @@
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 950px;
+  background-color: #ffffff;
+  min-height: 100%;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.mainBg {
+  position: absolute;
+  width: 950px;
+  left: 50%;
+  top: 0;
+  margin-left: -475px;
+  z-index: 0;
+  background-color: #005eb8;
+  background-repeat: no-repeat;
+}
+
+/*------------------------------ transition---------------------------------*/
+.btn_goTop, .btn_goTop span, .demo_show li a {
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+}
+
+/*------------------------------ Header--------------------------------------*/
+.index {
+  width: 950px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+  margin: 0 auto;
+  min-height: 1300px;
+}
+
+.header {
+  position: relative;
+  background-image: url(../images/keyvisual2.gif);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 1000px;
+  z-index: 200;
+}
+
+.br_logo{
+  position: absolute;
+  top: 16%;
+  left: 30%;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.slogan_22{
+  position: absolute;
+  top:23%;
+  left: 18%;
+  z-index: 202;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.fast{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index:201;
+}
+.fast img{
+  width: 336px;
+}
+.fast_shadow{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index:200;
+}
+.nofinal{
+  position: absolute;
+  top: 40%;
+  right: 11%;
+  z-index: 201;
+}
+.nofinal img{
+  width: 336px;
+}
+.nofinal_shadow{
+  position: absolute;
+  top: 40%;
+  right: 11%;
+  z-index: 200;
+}
+/*------------Visual------*/
+.shoes{
+  position: relative;
+  background-image: url(../images/header.gif);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 2258px;
+  z-index: 201;
+  margin-top: -25%;
+}
+.texture{
+  position: absolute;
+  top:3%;
+  left: 0%;
+  z-index: 202;
+}
+.lightning{
+  position: absolute;
+  top:5%;
+  left: 41%;
+  z-index: 202;
+}
+.slogan_1{
+  position: absolute;
+  top:11%;
+  left: 17.5%;
+  z-index: 202;
+}
+.slogan_2{
+  position: absolute;
+  top:16.5%;
+  left: 18%;
+  z-index: 202;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.slogan_text{
+  position: absolute;
+  top:18.5%;
+  left: 23%;
+  z-index: 202;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+.soft_1{
+  position: absolute;
+  top: 67.5%;
+  left: 12.5%;
+  z-index: 202;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+.easygo_1{
+  position: absolute;
+  top: 67.5%;
+  right: 12.5%;
+  z-index: 202;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+.feedback{
+  position: absolute;
+  top:53.5%;
+  left: 11%;
+  z-index: 202;
+}
+.feedback_text{
+  position: absolute;
+  top:67.5%;
+  left: 12%;
+  z-index: 202;
+}
+/*---------------------------feature---------------------------------------*/
+.feature{
+  position: relative;
+  background-image: url(../images/gray.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 2064px;
+  z-index: 200;
+  margin-top: -78%;
+}
+.product_benefits{
+  position: absolute;
+  top:29%;
+  left: 27%;
+  z-index: 201;
+}
+.foot_icon{
+  position: absolute;
+  top: 36%;
+  left: 12%;
+  z-index: 201;
+}
+.foot_icon img{
+  width: 300px;
+}
+.goodsize{
+  position: absolute;
+  top: 52.5%;
+  left: 9%;
+  z-index: 201;
+}
+.transfe{
+  position: absolute;
+  top: 36%;
+  right: 14%;
+  z-index: 201;
+}
+.transfe img{
+  width: 300px;
+}
+.fast_transfe{
+  position: absolute;
+  top: 52.5%;
+  right: 13%;
+  z-index: 201;
+}
+.low_weight{
+  position: absolute;
+  top: 61%;
+  left: 12%;
+  z-index: 201;
+}
+.low_weight img{
+  width: 300px;
+}
+.loss_height{
+  position: absolute;
+  top: 78%;
+  left: 11%;
+  z-index: 201;
+}
+.fast_icon{
+  position: absolute;
+  top: 61%;
+  right: 14%;
+  z-index: 201;
+}
+.fast_icon img{
+  width: 300px;
+}
+.sensitive{
+  position: absolute;
+  top: 78%;
+  right: 18%;
+  z-index: 201;
+}
+/*-------------------------------Visual--------------------------------------*/
+.visual{
+  position: relative;
+  background-image: url(../images/visual.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 1472px;
+  z-index: 199;
+  margin-top: -22%;
+}
+.visual-men{
+  position: absolute;
+  top: 18%;
+  right: 9%;
+  z-index: 201;
+}
+.fys{
+  position: absolute;
+  top: 39%;
+  right: 5%;
+  z-index: 201;
+}
+.slogan_21{
+  position: absolute;
+  top: 74%;
+  right: 18%;
+  z-index: 201;
+}
+.design{
+  position: absolute;
+  top: 82%;
+  right: 22.5%;
+  z-index: 201;
+}
+
+.red{
+  position: absolute;
+  top:56%;
+  left: 0%;
+  z-index: 202;
+}
+.visual_text{
+  position: absolute;
+  top:58%;
+  left: 12%;
+  z-index: 203;
+}
+/*-------------------------------Techlogy-------------------------------------*/
+.tech{
+  position: relative;
+  background-image: url(../images/blue_playground.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 6414px;
+  z-index: 201;
+  margin-top: -5%;
+}
+.br_logo1{
+  position: absolute;
+  top: 1.7%;
+  left: 28%;
+  z-index: 202;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.shoes_title{
+  position: absolute;
+  top:3%;
+  left: 15%;
+  z-index: 202;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.shoes_title img{
+  width: 655px;
+}
+.power_bk{
+  position: absolute;
+  top: 12%;
+  left: 0;
+  z-index: 201;
+}
+.shoes1_shadow{
+  position: absolute;
+  top: 9%;
+  left: 15%;
+  z-index: 202;
+  mix-blend-mode:multiply;
+}
+.shoes1{
+  position: absolute;
+  top: 9%;
+  left: 13%;
+  z-index: 203;
+}
+.height{
+  position: absolute;
+  top: 6%;
+  left: 13%;
+  z-index: 203;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.weight{
+  position: absolute;
+  top: 6%;
+  right: 13%;
+  z-index: 203;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+/*-------------------------------BlueLine-------------------------------------*/
+
+.bl_logo{
+  position: absolute;
+  top: -2%;
+  left: 37%;
+  z-index: 202;
+}
+.bl_logo1{
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 202;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0,0);
+  }
+
+  20% {
+    transform: translate(0,20px);
+  }
+
+  40% {
+    transform: translate(0,25px);
+  }
+  60% {
+    transform: translate(0,25px);
+  }
+  80% {
+    transform: translate(0,20px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+.RH_LOGO1{
+  position: absolute;
+  top: 11%;
+  left: 2%;
+  z-index: 203;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+
+.bl_text{
+  position: absolute;
+  top: 19%;
+  left: 13%;
+  z-index: 203;
+}
+.bl_text img{
+  width: 85%;
+}
+.dna_flash{
+  position: absolute;
+  top: 21.5%;
+  left: 25%;
+  z-index: 203;
+}
+.dna_flash_text{
+  position: absolute;
+  top: 23%;
+  left: 22%;
+  z-index: 203;
+}
+.backshoes{
+  position: absolute;
+  top: 26%;
+  right: 0;
+  z-index: 203;
+}
+.backshoes_shadow{
+  position: absolute;
+  top: 26%;
+  right: 0;
+  z-index: 201;
+  mix-blend-mode: multiply;
+}
+.RH_LOGO2{
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  z-index: 203;
+}
+.RH_LOGO3{
+  position: absolute;
+  top: 56%;
+  left: 2%;
+  z-index: 203;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+.NitroBottle{
+  position:absolute;
+  top:32%;
+  left: 0%;
+  z-index: 204;
+}
+.NitroBottle img{
+  width: 950px;
+}
+/*----Height-----*/
+.shoes2_shadow{
+  position: absolute;
+  top: 42.5%;
+  left: 13%;
+  z-index: 200;
+  mix-blend-mode:multiply;
+}
+.shoes2{
+  position: absolute;
+  top: 42.5%;
+  left: 13%;
+  z-index: 201;
+}
+.shoes2 img{
+  width: 88%;
+}
+.shoes2_shadow img{
+  width: 88%;
+}
+.shoes2_arrow_down{
+  position: absolute;
+  top: 44%;
+  left: 16%;
+  z-index: 202;
+}
+.shoes2_arrow_up{
+  position: absolute;
+  top: 47.8%;
+  left: 16%;
+  z-index: 202;
+}
+.shoes2_high{
+  position: absolute;
+  top: 50.2%;
+  left: 9%;
+  z-index: 202;
+}
+.shoes2_arrow_down1{
+  position: absolute;
+  top: 46%;
+  right: 38%;
+  z-index: 202;
+}
+.shoes2_arrow_up1{
+  position: absolute;
+  top: 49%;
+  right: 38%;
+  z-index: 202;
+}
+.shoes2_high1{
+  position: absolute;
+  top: 51.3%;
+  right: 32%;
+  z-index: 202;
+}
+.shoes2_midsole{
+  position: absolute;
+  top: 52.5%;
+  right: 24%;
+  z-index: 202;
+}
+/*midsole*/
+.midsole_tiltle{
+  position: absolute;
+  top:41.5%;
+  right: 3%;
+  z-index: 202;
+}
+.midsole_tiltle img{
+  width: 90%;
+}
+.midsole_text{
+  position: absolute;
+  top: 47%;
+  right: 2.5%;
+  z-index: 202;
+}
+/*---Rapid Eoll----*/
+.shoes3_shadow{
+  position: absolute;
+  top: 58.5%;
+  left: 15%;
+  z-index: 200;
+  mix-blend-mode:multiply;
+}
+.shoes3{
+  position: absolute;
+  top: 58.5%;
+  left: 13%;
+  z-index: 201;
+}
+.rapid_title{
+  position: absolute;
+  top: 57%;
+  left: 20%;
+  z-index: 201;
+}
+.rapid1{
+  position: absolute;
+  top: 61.5%;
+  left: 0.5%;
+  z-index: 201;
+}
+.rapid1 img{
+  width: 65%;
+}
+.rapid{
+  position: absolute;
+  top: 61.5%;
+  right: -10.5%;
+  z-index: 201;
+}
+.rapid img{
+  width: 65%;
+}
+.rapid_text{
+  position: absolute;
+  top: 64%;
+  left: 21%;
+  z-index: 201;
+}
+/*-----Outsole-----*/
+
+.outsole_color{
+  position: absolute;
+  top: 66.4%;
+  left: 10%;
+  z-index: 201;
+  mix-blend-mode:multiply;
+}
+.outsole_color img{
+  width: 75%;
+}
+.outsole_shoe{
+  position: absolute;
+  top: 66.4%;
+  left: 10%;
+  z-index: 200;
+}
+.outsole_title{
+  position: absolute;
+  top:69%;
+  right: 15%;
+}
+.outsole_text1{
+  position: absolute;
+  top: 70.5%;
+  right: 42%;
+}
+.outsole_title1{
+  position: absolute;
+  top: 72.8%;
+  right: 27%;
+}
+.outsole_text2{
+  position: absolute;
+  top: 74%;
+  right: 36.5%;
+}
+.outsole_title2{
+  position: absolute;
+  top: 72.4%;
+  right: 27%;
+}
+.outsole_text3{
+  position: absolute;
+  top: 73.8%;
+  right: 14%;
+}
+
+
+/*---tongue--*/
+.s45_showdow{
+  position: absolute;
+  top:79%;
+  left: 9%;
+  z-index: 202;
+  mix-blend-mode:multiply;
+}
+.s45_showdow img{
+  width: 85%;
+}
+.s45{
+  position: absolute;
+  top:79%;
+  left: 8%;
+  z-index: 202;
+}
+.s45 img{
+  width: 85%;
+}
+.tongue_pic{
+  position: absolute;
+  top:76%;
+  right: 8%;
+  z-index: 202;
+}
+.tongue_text{
+  position: absolute;
+  top:76.7%;
+  right: 7%;
+  z-index: 202;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+
+}
+.tongue_line{
+  position: absolute;
+  top:78%;
+  left: 23%;
+  z-index: 202;
+}
+/*VAMP*/
+.vamp_pic{
+  position: absolute;
+  top:85.5%;
+  left: 8%;
+  z-index: 202;
+}
+.vamp_line{
+  position: absolute;
+  top:83.5%;
+  left: 30%;
+  z-index: 202;
+}
+.vamp_title{
+  position: absolute;
+  top:86.5%;
+  right: 11%;
+  z-index: 202;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+.vamp_text{
+  position: absolute;
+  top:88%;
+  right: 20.5%;
+  z-index: 202;
+  animation: float 2s linear infinite;
+  -webkit-animation: float 2s linear infinite;
+  -moz-animation: float 2s linear infinite;
+}
+/*Toecap*/
+.toecap_shadow{
+  position: absolute;
+  top:39%;
+  left: 0%;
+  z-index: 202;
+  mix-blend-mode:multiply;
+}
+.toecap{
+  position: absolute;
+  top:39%;
+  left: 0%;
+  z-index: 202;
+}
+.circle1{
+  position: absolute;
+  top:40%;
+  left: 32%;
+  z-index: 203;
+}
+.toecap_title{
+  position: absolute;
+  top:39%;
+  right: 3%;
+  z-index: 202;
+}
+.toecap_text{
+  position: absolute;
+  top: 40%;
+  right: 22.5%;
+  z-index: 202;
+}
+
+/*shoecollar*/
+.shoecollar_shoe_shadow{
+  position: absolute;
+  top: 91.5%;
+  right: 0;
+  z-index: 200;
+  mix-blend-mode:multiply;
+}
+.shoecollar_shoe{
+  position: absolute;
+  top: 91.5%;
+  right: 0;
+  z-index: 201;
+}
+.circle3{
+  position: absolute;
+  top:90.5%;
+  right: 21%;
+  z-index: 203;
+}
+.circle3 img{
+  width: 90%;
+}
+.circle4{
+  position: absolute;
+  top:95%;
+  right: 21%;
+  z-index: 203;
+}
+.circle4 img{
+  width: 90%;
+}
+.shoecollar_title{
+  position: absolute;
+  left: 8%;
+  top: 93.5%;
+  z-index: 203;
+}
+.shoecollar_text{
+  position: absolute;
+  left: 8%;
+  top:95.8%;
+  z-index: 203;
+}
+.shoecollar_subtitle{
+  position: absolute;
+  left: 8%;
+  top:97%;
+  z-index: 203;
+}
+.shoecollar_text2{
+  position: absolute;
+  left: 8%;
+  top:98%;
+  z-index: 203;
+}
+
+/*------------------------------Open Box----------------------------------*/
+.open_box{
+  position: relative;
+  background-image: url(../images/final1.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 2051px;
+  z-index: 200;
+  margin-top: 0%;
+}
+.openbox_title{
+  position: absolute;
+  left: 12.5%;
+  top: 7%;
+}
+.video2{
+  position: absolute;
+  top: 39%;
+  left: 8%;
+}
+.power2{
+  position: absolute;
+  top:69%;
+  left: 37%;
+}
+.dna_flash_icon{
+  position: absolute;
+  top: 71%;
+  left: 17%;
+}
+.dna_flash_icon img{
+  width: 75%;
+}
+.power3{
+  position: absolute;
+  top:90%;
+  left: 37%;
+}
+.red_bk{
+  position: absolute;
+  top:17%;
+  left: 0;
+  z-index: 200;
+}
+.openbox_text{
+  position: absolute;
+  top: 16%;
+  left: 12%;
+  z-index: 201;
+}
+.freehand{
+  position: absolute;
+  top:28%;
+  right: 29%;
+  z-index: 201;
+  mix-blend-mode:multiply;
+}
+.yellow_bk{
+  position: absolute;
+  top:77.8%;
+  right: 12%;
+  z-index: 202;
+}
+.video1{
+  position: absolute;
+  top: 78.3%;
+  right: 13.2%;
+  z-index: 203;
+}
+.lightting1{
+  position: absolute;
+  top:71%;
+  left: 38%;
+  z-index: 203;
+}
+.lightting2{
+  position: absolute;
+  top: 73%;
+  right: 31%;
+  z-index: 203;
+}
+.lightting3{
+  position: absolute;
+  top:71%;
+  right: -2%;
+  z-index: 203;
+}
+
+/*--------------------------------All Style---------------------------------*/
+.allstyle{
+  position: relative;
+  background-image: url(../images/style_bk.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 1705px;
+  z-index: 200;
+  margin-top: 0%;
+}
+.hyperionMax{
+  position: absolute;
+  top: 7%;
+  left: 14%;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.find_lightting{
+  position: absolute;
+  top: 13%;
+  left: 14%;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+
+.MEN_1D078{
+  position: absolute;
+  top: 45%;
+  left: 7.5%;
+  z-index: 201;
+}
+.MEN_1D078_shadow{
+  position: absolute;
+  top: 45%;
+  left: 8%;
+  z-index: 200;
+  mix-blend-mode: multiply;
+}
+.MEN_1D078 img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.MEN_1D078:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.MEN_1D078_shadow img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.MEN_1D078_shadow:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.MEN_1D426{
+  position: absolute;
+  top: 35%;
+  left: 36.5%;
+  z-index: 201;
+}
+.MEN_1D426_shadow{
+  position: absolute;
+  top: 35%;
+  left: 37%;
+  z-index: 200;
+  mix-blend-mode: multiply;
+}
+.MEN_1D426 img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.MEN_1D426:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.MEN_1D426_shadow img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.MEN_1D426_shadow:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+
+.MEN_1D887{
+  position: absolute;
+  top: 24%;
+  right: 3.5%;
+  z-index: 201;
+}
+.MEN_1D887_shadow{
+  position: absolute;
+  top: 24%;
+  right: 3.5%;
+  z-index: 200;
+  mix-blend-mode: multiply;
+}
+.MEN_1D887 img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.MEN_1D887:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.MEN_1D887_shadow img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.MEN_1D887_shadow:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.MEN_LABEL{
+  position: absolute;
+  right: 0;
+  top:56%;
+}
+.WOMENS_1B089{
+  position: absolute;
+  top: 73%;
+  right: 7.5%;
+  z-index: 201;
+}
+.WOMENS_1B089_shadow{
+  position: absolute;
+  top: 73%;
+  right: 7.5%;
+  z-index: 200;
+  mix-blend-mode: multiply;
+}
+.WOMENS_1B089 img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.WOMENS_1B089:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.WOMENS_1B089_shadow img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.WOMENS_1B089_shadow:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.WOMENS_1B659{
+  position: absolute;
+  top: 64%;
+  left: 7.5%;
+  z-index: 201;
+}
+.WOMENS_1B659_shadow{
+  position: absolute;
+  top: 64%;
+  left: 7.5%;
+  z-index: 200;
+  mix-blend-mode: multiply;
+}
+.WOMENS_1B659 img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.WOMENS_1B659:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.WOMENS_1B659_shadow img {
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 40% 70%;
+}
+.WOMENS_1B659_shadow:hover img {
+  -webkit-transform: scale(1.05);
+  margin: 0 1em;
+}
+.WOMEN_LABEL{
+  position: absolute;
+  left: 0;
+  top:84%;
+}
+/*-------------------------------ENDING-------------------------------------*/
+.ending {
+  position: relative;
+  background-image: url(../images/ending.gif);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 1546px;
+  z-index: 98;
+  background-position-y: 51%;
+}
+
+.slogan_3{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+.fyr{
+  position: absolute;
+  top:78%;
+  left: 7%;
+}
+.fyr img{
+  width: 90%;
+}
+.buy{
+  position: absolute;
+  top: 89%;
+  left: 9%;
+  z-index: 99;
+}
+.store{
+  position: absolute;
+  top: 89%;
+  left: 37%;
+  z-index: 99;
+}
+.focus{
+  position: absolute;
+  top: 89%;
+  right:9%;
+  z-index: 99;
+}
+
+/*-------------------------------Footer-------------------------------------*/
+.footer {
+  position: relative;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 275px;
+  z-index: 98;
+}
+.brook_logo{
+  position: absolute;
+  top: 22%;
+  left: 21%;
+}
+.copyright{
+  position: absolute;
+  top: 68%;
+  left: 147px;
+}
+/*---------------------------videoWrap---------------------------*/
+.videoWrap {
+  width: 950px;
+  position: relative;
+  height: 800px;
+  z-index: 1;
+  background-image: url(../images/video_bg.png);
+  overflow: hidden;
+  top: 136%;
+}
+
+.video_TIT1 {
+  position: absolute;
+  width: 950px;
+  left: 0;
+  top: 385px;
+}
+
+.video_TIT2 {
+  position: absolute;
+  width: 950px;
+  left: 0;
+  bottom: 325px;
+}
+
+.video_main {
+  position: absolute;
+  width: 810px;
+  height: 490px;
+  left: 50%;
+  top: 48%;
+  background-color: #fff;
+  margin: -275px 0 0 -408px;
+}
+
+#sandalsmv {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  top: 1%;
+  left: 1%;
+}
+
+a.videoframe {
+  position: absolute;
+  z-index: 22;
+  top: 177%;
+  left: 6%;
+  width: 87%;
+}
+
+/*---------------------------btn_goTop---------------------------*/
+.btn_goTop {
+  position: fixed !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: rgb(240 200 204);
+  bottom: 10px;
+  left: 50%;
+  margin-left: 480px;
+  z-index: 999;
+  display: block;
+}
+
+.btn_goTop span {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 21px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -17px;
+  background-image: url(../images/goTop.png);
+}
+
+.btn_goTop:hover {
+  background-color: rgb(255, 185, 192);
+}
+
+.btn_goTop:hover.btn_goTop span {
+  margin: -15px 0 0 -17px;
+}
