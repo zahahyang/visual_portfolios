@@ -1,0 +1,985 @@
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 950px;
+  background-color: #ffffff;
+  min-height: 100%;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.mainBg {
+  position: absolute;
+  width: 950px;
+  left: 50%;
+  top: 0;
+  margin-left: -475px;
+  z-index: 0;
+  background-color: #005eb8;
+  background-repeat: no-repeat;
+}
+
+/*------------------------------ transition---------------------------------*/
+.btn_goTop, .btn_goTop span, .demo_show li a {
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+}
+
+/*------------------------------ Header--------------------------------------*/
+.index {
+  width: 950px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+  margin: 0 auto;
+  min-height: 1300px;
+}
+
+.header {
+  position: relative;
+  background-image: url(../images/header_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 1819px;
+  z-index: 200;
+}
+
+.br_logo_blue{
+  position: absolute;
+  top: 5%;
+  left: 19%;
+}
+.catamount_logo{
+  position: absolute;
+  top: 13%;
+  left: 15%;
+}
+.left_arrow{
+  position: absolute;
+  top: 35%;
+  left: 3%;
+}
+.slogan_fly{
+  position: absolute;
+  top: 27%;
+  left: 14%;
+}
+.slogan_unlock{
+  position: absolute;
+  top: 33%;
+  right: 14%;
+}
+.right_arrow{
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+.main_men{
+  position: absolute;
+  top: 42%;
+  left: 25%;
+  animation: playskr 3s 1.5s ease-in-out infinite;
+  -moz-animation: playskr 3s 1.5s ease-in-out infinite;
+  -webkit-animation: playskr 3s 1.5s ease-in-out infinite;
+}
+.highlight{
+  position: absolute;
+  top: 59%;
+  left: 0%;
+}
+.big_slogan{
+  position: absolute;
+  top: 61%;
+  left: 4%;
+}
+/*------------------------------ Award--------------------------------------*/
+
+.award_bg {
+  position: relative;
+  background-image: url(../images/award_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 1172px;
+  z-index: 200;
+}
+.runnerworld{
+  position: absolute;
+  top: 5%;
+  left:0%;
+}
+.coach{
+  position: absolute;
+  top: 28%;
+  right: 0%;
+}
+.m_shoes{
+  position: absolute;
+  top: 42%;
+  left: 6%;
+  animation: playskr 5s 1.5s ease-in-out infinite;
+  -moz-animation: playskr 5s 1.5s ease-in-out infinite;
+  -webkit-animation: playskr 5s 1.5s ease-in-out infinite;
+}
+.m_shoes_g{
+  position: absolute;
+  top: 60%;
+  left: 6%;
+  animation: playskr 5s 1.5s ease-in-out infinite;
+  -moz-animation: playskr 5s 1.5s ease-in-out infinite;
+  -webkit-animation: playskr 5s 1.5s ease-in-out infinite;
+}
+@keyframes playskr {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(0px, 20px);
+  }
+
+  40% {
+    transform: translate(0px, 0px);
+  }
+
+
+  60% {
+    transform: translate(0px, 20px);
+  }
+
+  80% {
+    transform: translate(0px, 0px);
+  }
+
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.w_shoes{
+  position: absolute;
+  top: 41%;
+  left: 24%;
+  animation: playskr 5s 1.5s ease-in-out infinite;
+  -moz-animation: playskr 5s 1.5s ease-in-out infinite;
+  -webkit-animation: playskr 5s 1.5s ease-in-out infinite;
+}
+.w_shoes_g{
+  position: absolute;
+  top: 60%;
+  left: 26%;
+  animation: playskr 5s 1.5s ease-in-out infinite;
+  -moz-animation: playskr 5s 1.5s ease-in-out infinite;
+  -webkit-animation: playskr 5s 1.5s ease-in-out infinite;
+}
+.height{
+  position: absolute;
+  top: 84%;
+  left: 6%;
+}
+/*------------------------------ Infortmation--------------------------------------*/
+/*------------------DNA FLASH-----------*/
+.information_bg {
+  position: relative;
+  background-image: url(../images/green_bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 4008px;
+  z-index: 200;
+}
+.blue_bg{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 201;
+}
+.bl_logo{
+  position: absolute;
+  top: 3%;
+  left: 23%;
+  z-index: 202;
+}
+.blue_lab{
+  position: absolute;
+  top: 7%;
+  left: 32.5%;
+  z-index: 202;
+}
+.dna_flash_inf{
+  position: absolute;
+  top: 21%;
+  left: 0%;
+  z-index: 202;
+}
+.dna_flash_logo{
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  z-index: 202;
+  animation: title 8s 1.5s ease-in-out infinite;
+  -moz-animation: title 8s 1.5s e`se-in-out infinite;
+  -webkit-animation: title 8s 1.5s ease-in-out infinite;
+}
+@keyframes title {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  10% {
+    transform: scale(1.15, 1.15);
+  }
+
+  20% {
+    transform: scale(1.1, 1.1);
+  }
+  30% {
+    transform: scale(1.15, 1.15);
+  }
+
+  40% {
+    transform: scale(1.1, 1.1);
+  }
+
+  50% {
+    transform: scale(1.15, 1.15);
+  }
+
+  60% {
+    transform: scale(1.1, 1.1);
+  }
+
+  70% {
+    transform: scale(1.15, 1.15);
+  }
+
+  80% {
+    transform: scale(1.1, 1.1);
+  }
+
+  90% {
+    transform: scale(1.15, 1.15);
+
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.nitro{
+  position: absolute;
+  top: 26.3%;
+  right: 1%;
+  z-index: 202;
+}
+.blue_power{
+  position: absolute;
+  top: 24%;
+  right: 28%;
+  z-index: 202;
+  animation: title 3s 1.5s ease-in-out infinite;
+  -moz-animation: title 3s 1.5s e`se-in-out infinite;
+  -webkit-animation: title 3s 1.5s ease-in-out infinite;
+}
+.bubble{
+  position: absolute;
+  top: 26%;
+  right: 5%;
+  z-index: 202;
+  animation: y_trasform 5s 1.5s ease-in-out infinite;
+  -moz-animation: y_trasform 5s 1.5s ease-in-out infinite;
+  -webkit-animation: y_trasform 5s 1.5s ease-in-out infinite;
+}
+@keyframes y_trasform {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(10px, 0px);
+  }
+
+  40% {
+    transform: translate(0px, 0px);
+  }
+
+
+  60% {
+    transform: translate(10px, 0px);
+  }
+
+  80% {
+    transform: translate(0px, 0px);
+  }
+
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+/*----------------Skyvault-------------*/
+.mountians2{
+  position: absolute;
+  top: 48%;
+  left: 0;
+  z-index: 201;
+}
+.mountians_men{
+  position: absolute;
+  top: 33%;
+  right: 0;
+  z-index: 202;
+}
+.grid{
+  position: absolute;
+  top: 37%;
+  left: 0;
+  z-index: 201;
+  mix-blend-mode: multiply;
+
+}
+.skyvault_pic{
+  position: absolute;
+  top: 34%;
+  left: 0%;
+  z-index: 201;
+}
+.skyvault_pic img{
+  width: 654px;
+}
+.line{
+  position: absolute;
+  top: 39%;
+  right: 39%;
+  z-index: 202;
+}
+.skyvault-s-logo{
+  position: absolute;
+  top: 38%;
+  right: 27%;
+  z-index: 203;
+}
+.shoe_catapault{
+  position: absolute;
+  top: 56%;
+  left: 5%;
+  z-index: 202;
+  animation: readygo 5s 1.5s ease-in-out infinite;
+  -moz-animation: readygo 5s 1.5s ease-in-out infinite;
+  -webkit-animation: readygo 5s 1.5s ease-in-out infinite;
+}
+@keyframes readygo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  5% {
+    transform: rotate(9deg);
+  }
+
+  10% {
+    transform: rotate(-6deg);
+  }
+
+  15% {
+    transform: rotate(20deg);
+  }
+
+  20% {
+    transform: rotate(-5deg);
+  }
+
+  23% {
+    transform: rotate(3deg);
+  }
+
+  26% {
+    transform: rotate(-3deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.mountians_arrows{
+  position: absolute;
+  top: 51%;
+  right: 1%;
+  z-index: 202;
+  animation: arrows_scale 3s 1.5s ease-in-out infinite;
+  -moz-animation: arrows_scale 3s 1.5s ease-in-out infinite;
+  -webkit-animation: arrows_scale 3s 1.5s ease-in-out infinite;
+}
+@keyframes arrows_scale {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(-20px, 20px);
+  }
+
+  40% {
+    transform: translate(0px, 0px);
+  }
+
+
+  60% {
+    transform: translate(-20px, 20px);
+  }
+
+  80% {
+    transform: translate(0px, 0px);
+  }
+
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.skyvault_zh{
+  position: absolute;
+  top: 65%;
+  left: 9%;
+  z-index: 202;
+}
+.skyvault-inf{
+  position: absolute;
+  top: 66.3%;
+  right: 7%;
+  z-index: 202;
+}
+.skyvault_yellow{
+  position: absolute;
+  top: 58%;
+  right: 16%;
+  z-index: 202;
+}
+/*---------------Trailtack-------------*/
+.trailtack_shoes{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 201;
+}
+.trailtack{
+  position: absolute;
+  top: 71%;
+  left: 26%;
+  z-index: 201;
+}
+.trailtack_shoe{
+  position: absolute;
+  top: 79.5%;
+  right: 5%;
+  z-index: 202;
+}
+.climbing_pic{
+  position: absolute;
+  top: 77.5%;
+  right: 18%;
+  z-index: 202;
+}
+.climbing_highnight{
+  position: absolute;
+  top: 79.2%;
+  right: 23.3%;
+  z-index: 202;
+  opacity: .7;
+}
+.climbing_inf{
+  position: absolute;
+  top: 75.5%;
+  right: 1%;
+  z-index: 202;
+}
+.brake_pic{
+  position: absolute;
+  top: 87%;
+  right: 15%;
+  z-index: 202;
+}
+.brake_highnight{
+  position: absolute;
+  top: 88.7%;
+  right: 18%;
+  z-index: 202;
+  opacity: .7;
+}
+.brake_inf{
+  position: absolute;
+  top: 90.5%;
+  right: 39%;
+  z-index: 202;
+}
+/*------------------------------ Infortmation 2--------------------------------------*/
+/*------------------VAMP-----------*/
+.information_bg_2{
+  position: relative;
+  background-image: url(../images/white_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 2695px;
+  z-index: 202;
+  margin-top: -28%;
+}
+.contourline-black{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 203;
+}
+.shoes_soil{
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  z-index: 203;
+  mix-blend-mode: multiply;
+}
+.back_shoes{
+  position: absolute;
+  top: 5%;
+  left: 14%;
+  z-index: 203;
+}
+.back_shoes_soil{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.back_shoes_highnight{
+  position: absolute;
+  top: 16.3%;
+  left: 14%;
+  z-index: 203;
+  opacity: .5;
+}
+
+.back_shoes_inf{
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  z-index: 203;
+}
+.car{
+  position: absolute;
+  top: 12%;
+  right: 11%;
+  z-index: 203;
+}
+.car img{
+  width: 345px;
+}
+
+.soil_bg{
+  position: absolute;
+  top: 19%;
+  left: 0;
+  z-index: 203;
+}
+.vamp_inf{
+  position: absolute;
+  top: 27%;
+  left: 15%;
+  z-index: 203;
+}
+.vamp_highlight{
+  position: absolute;
+  top: 45.5%;
+  left: 42%;
+  z-index: 203;
+  opacity: .5;
+}
+.drain_arrow{
+  position: absolute;
+  top: 47%;
+  left: 49%;
+  z-index: 203;
+  animation: arrows_scale1 3s 1.5s ease-in-out infinite;
+  -moz-animation: arrows_scale1 3s 1.5s ease-in-out infinite;
+  -webkit-animation: arrows_scale1 3s 1.5s ease-in-out infinite;
+}
+@keyframes arrows_scale1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(10px, 10px);
+  }
+
+  40% {
+    transform: translate(0px, 0px);
+  }
+
+
+  60% {
+    transform: translate(10px, 10px);
+  }
+
+  80% {
+    transform: translate(0px, 0px);
+  }
+
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.drain_inf{
+  position: absolute;
+  top: 52%;
+  left: 20%;
+  z-index: 203;
+}
+.tpu_highnight{
+  position: absolute;
+  top: 44.3%;
+  right: 17.3%;
+  z-index: 203;
+  opacity: .7;
+}
+.tpu{
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  z-index: 203;
+}
+.layer40{
+  position: absolute;
+  top: 56%;
+  right: 0%;
+  z-index: 203;
+}
+.shoelace{
+  position: absolute;
+  top: 58%;
+  right: 0%;
+  z-index: 203;
+}
+.circle{
+  position: absolute;
+  top: 78%;
+  right: 23%;
+  z-index: 203;
+  animation: readygo 5s 1.5s ease-in-out infinite;
+  -moz-animation: readygo 5s 1.5s ease-in-out infinite;
+  -webkit-animation: readygo 5s 1.5s ease-in-out infinite;
+}
+.storage_arrow{
+  position: absolute;
+  top: 75%;
+  right: 28%;
+  z-index: 203;
+}
+.storage_circle{
+  position: absolute;
+  top: 68%;
+  right: 4%;
+  z-index: 203;
+}
+.backshoes_arrow{
+  position: absolute;
+  top: 74%;
+  left: 20%;
+  z-index: 203;
+}
+.backshoes_tie{
+  position: absolute;
+  top: 71%;
+  left: 6%;
+  z-index: 203;
+}
+.yellow_back{
+  position: absolute;
+  top: 80%;
+  right: 14%;
+  z-index: 203;
+}
+.yellow_front{
+  position: absolute;
+  top: 83%;
+  left: 48%;
+  z-index: 203;
+}
+.middle_design{
+  position: absolute;
+  top: 87%;
+  left: 5%;
+  z-index: 203;
+}
+/*------------------------------ eco--------------------------------------*/
+
+.eco_bg {
+  position: relative;
+  background-image: url(../images/eco_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 1453px;
+  z-index: 203;
+  margin-top: -7%;
+}
+.co2_foot{
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  z-index: 204;
+}
+.forest_inf{
+  position: absolute;
+  top: 18%;
+  left: 8%;
+  z-index: 204;
+}
+.forest{
+  position: absolute;
+  top: 22%;
+  right: -5%;
+  z-index: 204;
+}
+.forest img{
+  width: 75%;
+}
+.f2040_co2{
+  position: absolute;
+  top: 63%;
+  left: 7%;
+  z-index: 204;
+}
+.paris{
+  position: absolute;
+  top: 71%;
+  left: 7%;
+  z-index: 204;
+}
+/*------------------------------ Shoes Serical--------------------------------------*/
+
+.serial_bg {
+  position: relative;
+  background-image: url(../images/serial_bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 715px;
+  z-index: 201;
+}
+.men_serial{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 202;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.women_serial{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 202;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+/*------------------------------ Ending--------------------------------------*/
+
+.ending_bg {
+  position: relative;
+  background-image: url(../images/ending.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 2034px;
+  z-index: 201;
+}
+.catamount2_white{
+  position: absolute;
+  left: 17%;
+  top: 6%;
+  z-index: 202;
+}
+.video_catamounts{
+  position: absolute;
+  left: 8%;
+  top: 18%;
+  z-index: 202;
+}
+.itsyourrun{
+  position: absolute;
+  top: 84%;
+  left: 20%;
+  z-index: 202;
+}
+.buy{
+  position: absolute;
+  left: 8%;
+  top: 92%;
+  z-index: 202;
+  animation: scale_big 3s 1.5s ease-in-out infinite;
+  -moz-animation: scale_big 3s 1.5s ease-in-out infinite;
+  -webkit-animation: scale_big 3s 1.5s ease-in-out infinite;
+}
+@keyframes scale_big {
+  0% {
+    transform: scale(1,1);
+  }
+
+  20% {
+    transform: scale(1.1,1.1);
+  }
+
+  40% {
+    transform: scale(1,1);
+  }
+
+
+  60% {
+    transform: scale(1.1,1.1);
+  }
+
+  80% {
+    transform: scale(1,1);
+  }
+  90% {
+    transform: scale(1.1,1.1);
+}
+
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+
+.store{
+  position: absolute;
+  left: 37%;
+  top: 92%;
+  z-index: 202;
+  animation: scale_big 3s 1.5s ease-in-out infinite;
+  -moz-animation: scale_big 3s 1.5s ease-in-out infinite;
+  -webkit-animation: scale_big 3s 1.5s ease-in-out infinite;
+}
+
+.focus{
+  position: absolute;
+  right: 8%;
+  top: 92%;
+  z-index: 202;
+  animation: scale_big 3s 1.5s ease-in-out infinite;
+  -moz-animation: scale_big 3s 1.5s ease-in-out infinite;
+  -webkit-animation: scale_big 3s 1.5s ease-in-out infinite;
+}
+
+
+/*-------------------------------Footer-------------------------------------*/
+.footer {
+  position: relative;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 275px;
+  z-index: 98;
+}
+.brook_logo{
+  position: absolute;
+  top: 31%;
+  left: 17%;
+}
+.copyright{
+  position: absolute;
+  top: 68%;
+  left: 17%;
+}
+/*---------------------------videoWrap---------------------------*/
+.videoWrap {
+  width: 950px;
+  position: relative;
+  height: 800px;
+  z-index: 1;
+  background-image: url(../images/video_bg.png);
+  overflow: hidden;
+  top: 136%;
+}
+
+.video_TIT1 {
+  position: absolute;
+  width: 950px;
+  left: 0;
+  top: 385px;
+}
+
+.video_TIT2 {
+  position: absolute;
+  width: 950px;
+  left: 0;
+  bottom: 325px;
+}
+
+.video_main {
+  position: absolute;
+  width: 810px;
+  height: 490px;
+  left: 50%;
+  top: 48%;
+  background-color: #fff;
+  margin: -275px 0 0 -408px;
+}
+
+#sandalsmv {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  top: 1%;
+  left: 1%;
+}
+
+a.videoframe {
+  position: absolute;
+  z-index: 22;
+  top: 177%;
+  left: 6%;
+  width: 87%;
+}
+
+/*---------------------------btn_goTop---------------------------*/
+.btn_goTop {
+  position: fixed !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: rgb(240 200 204);
+  bottom: 10px;
+  left: 50%;
+  margin-left: 480px;
+  z-index: 999;
+  display: block;
+}
+
+.btn_goTop span {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 21px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -17px;
+  background-image: url(../images/goTop.png);
+}
+
+.btn_goTop:hover {
+  background-color: rgb(255, 185, 192);
+}
+
+.btn_goTop:hover.btn_goTop span {
+  margin: -15px 0 0 -17px;
+}

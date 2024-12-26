@@ -1,0 +1,417 @@
+
+
+/* ----------------------------------------------------------寬度 2000 設定-------------------------------------------------*/
+@media screen and (max-width: 2000px){
+.eliteIntroduction_show_bottom_bg {    
+    width: 2000px;
+}
+}
+/* ----------------------------------------------------------寬度 1920 設定-------------------------------------------------*/
+@media screen and (max-width: 1920px){
+.index_intro2_bottom, .video_topLine, .video_bg, .techWrap_1_main_bg, .technology_middlePhoto, .buyNow_top, .bottomWrap_bg {
+	width:1920px;	
+}
+}
+/* ----------------------------------------------------------寬度 1700 設定-------------------------------------------------*/
+@media screen and (max-width: 1700px){
+.index_intro_runner_3 {
+    width: 180px;
+    margin: -175px 0 0px 420px;
+}
+.index_intro_runner_2 {
+    width: 230px;
+    margin: -170px 0 0px 125px;
+}
+.index_intro_runner_1 {
+    width: 255px;
+    margin: -130px 0 0px -150px;
+}
+.techWrap_3_shoe_L {    
+    left: 50%;   
+    margin-left: -800px;
+}
+.techWrap_3_shoe_R {    
+    right: 50%;   
+    margin-right: -850px;
+}
+}
+/* ----------------------------------------------------------寬度 1500 設定-------------------------------------------------*/
+@media screen and (max-width: 1500px){
+.techWrap_3_shoe_L {   
+    width: 350px;  
+    margin-left: -700px;
+}		
+.techWrap_3_shoe_R {   
+    width: 350px;    
+    margin-right: -710px;
+}	
+}
+/* ----------------------------------------------------------寬度 1300 設定-------------------------------------------------*/
+@media screen and (max-width: 1300px){
+.secondWrap_photo {   
+    width: 1345px;
+    margin-left: -1107px;
+}	
+.technology_2_photo_2_cont span {   
+    left: -10px;
+    top: -165px;
+}	
+.technology_1_cont {    
+    width: 380px;    
+}	
+.technology_1_cont_1 {
+    margin-left: -560px;   
+}
+.technology_1_cont_2 {
+    margin-left: -190px;   
+}
+.technology_1_cont_3 {
+    margin-left: 180px;   
+}	
+.technology_1_wingRight {
+    margin-left: 65px;   
+}
+.technology_1_wingRight {
+	margin-left: 10px;   
+    bottom: 40px; 
+    width: 180px;   
+    transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+    -moz-transform: rotate(21deg);
+}
+.technology_1_cont_1 span {
+    width: 167px;
+    top: -308px;
+    left: 167px;
+}	
+.technology_1_cont_2 span {
+    width: 55px;
+    top: -234px;
+    left: 166px;
+}
+.technology_1_cont_3 span {
+    width: 370px;
+    top: -263px;
+    left: -175px;   
+    transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+}
+.secondWrap_shoe {    
+    width: 760px;    
+    margin: -140px 0 0px -220px;    
+}
+.indexTop_dna2 {   
+    margin-left: 270px;
+}
+.indexIntro_2 h3 { 
+    top: 160px;  
+}
+}
+/* ----------------------------------------------------------寬度 1200 設定-------------------------------------------------*/
+@media screen and (max-width: 1200px){
+.index_intro_runner_3 {
+    width: 180px;
+    margin: -155px 0 0px 220px;
+}
+.index_intro_runner_2 {
+    width: 230px;
+    margin: -160px 0 0px 30px;
+}
+.index_intro_runner_1 {
+    width: 255px;
+    margin: -130px 0 0px -150px;
+}
+.secondWrap_photo {
+    width: 1275px;
+    margin-left: -1050px;
+}
+.buyNowWrap ul {    
+    width: 1100px;   
+}
+}
+/* ----------------------------------------------------------寬度 1100 設定-------------------------------------------------*/
+@media screen and (max-width: 1100px){
+.index_TIT_icon, .techWrap_3_shoe_L, .techWrap_3_shoe_R, .techWrap_3_bg span:nth-child(2){   
+    display: none;
+}	
+.secondWrap_photo {    
+    margin-left: -1010px;
+}	
+.technology_1_cont_1 {
+    margin-left: -545px;
+}	
+.technology_1_cont_3 {
+    margin-left: 165px;
+}	
+.buyNowWrap ul {    
+    width: 950px;   
+}	
+.buyNowWrap ul li {   
+    width: 25%;    
+    margin-left: 0;
+}	
+.techWrap_3_bg span:nth-child(1) {    
+    height: 140px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.techWrap_3 h2 {
+    width: 950px;   
+}	
+.secondWrap_shoe_icon {    
+    margin-left: 50px;
+}
+}
+/* ----------------------------------------------------------寬度 1000 設定-------------------------------------------------*/
+@media screen and (max-width: 1000px){
+.secondWrap_photo {
+    margin-left: -880px;
+    width: 1070px;
+}	
+.secondWrap_bn_bg {   
+    height: 530px;  
+}	
+.technology_1_cont {
+    width: 365px;
+}
+.technology_1_cont_1 {
+    margin-left: -518px;
+}
+.technology_1_cont_2 {
+    margin-left: -182px;
+}
+.technology_1_cont_3 {
+    margin-left: 155px;
+}
+.technology_1_cont_1 span {
+    width: 170px;
+    top: -315px;
+    left: 152px;
+}
+.technology_1_cont_2 span {
+    width: 55px;
+    top: -236px;
+    left: 166px;
+}
+
+.techWrap_3_bg {    
+    width: 950px;   
+}
+.secondWrap_shoe {
+    width: 600px;
+    margin: -110px 0 0px -160px;
+}
+.indexTop_dna {   
+    width: 120px;   
+    margin: 95px 0 0 -10px;
+}
+.indexTop_dna2 {
+    margin-left: 200px;    
+    top: 50px;
+    width: 270px;
+}
+}
+/* ----------------------------------------------------------寬度 950 設定-------------------------------------------------*/
+@media screen and (max-width: 950px){
+.index_intro_runner_3 {
+    width: 180px;
+    margin: -115px 0 0px 210px;
+}
+.index_intro_runner_2 {
+    width: 250px;
+    margin: -120px 0 0px -60px;
+}
+.index_intro_runner_1 {
+    width: 298px;
+    margin: -80px 0 0px -340px;
+}
+.indexIntro_2 h3 img{
+	display: none;     
+}
+.indexIntro_2 h3 {
+	width:853px;
+	height: 433px;
+    left: 51%;
+    top: 29%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    background: url(../images/index_intro2_TIT_2_m.png); 
+}
+.index_intro_TIT_bg {    
+    width: 995px;
+    top: 50%;
+    left: -100px;
+    margin-top: -550px;
+}
+.index_intro_TIT_bg h2 {
+    width: 660px;   
+    left: 53%;
+    top: 47%;
+}
+.index_intro_TIT_bg h3 {
+    width: 785px;    
+    left: 54%;	
+	top: 47%;
+}
+.indexIntro_logo {
+    width: 400px;
+    right: 50%;   
+    margin-right: -200px;
+}	
+.indexIntro_2 .index_intro_TIT_bg {    
+    bottom: 265px;   
+    width: 995px;
+}	
+.indexIntro_2 .index_intro_TIT_bg h2 {   
+    width: 775px;    
+    top: 50%;
+}	
+.secondWrap_photo {
+    margin-left: -855px;   
+}	
+.videoWrap {   
+    margin: 50px auto 0;
+}
+.video_feather_1 {   
+    left: 5px;
+    top: -100px;   
+}
+.video_feather_2 {    
+    right: 5px;   
+}	
+.techWrap_middle h3 {   
+    bottom: auto;
+    top: 50px;
+}	
+.techWrap_3_main_p2 img:nth-child(1), .techWrap_3_main_p4 img:nth-child(1), .techWrap_3_main_p1>div.techWrap_3_main_p1_2 img:nth-child(1), 
+.techWrap_3_main_p6>div.techWrap_3_main_p6_1 img:nth-child(1), .technology_2_photo_1_cont img:nth-child(1), .technology_2_photo_2_cont img:nth-child(1),
+.technology_1_cont_1 img:nth-child(1), .technology_1_cont_2 img:nth-child(1), .technology_1_cont_3 img:nth-child(1){
+	display: none;	
+}
+.techWrap_3_main_p2 img:nth-child(2), .techWrap_3_main_p4 img:nth-child(2), .techWrap_3_main_p1>div.techWrap_3_main_p1_2 img:nth-child(2), 
+.techWrap_3_main_p6>div.techWrap_3_main_p6_1 img:nth-child(2), .technology_2_photo_1_cont img:nth-child(2), .technology_2_photo_2_cont img:nth-child(2),
+.technology_2_photo_2_cont span img, .technology_1_cont_1 img:nth-child(2), .technology_1_cont_2 img:nth-child(2), .technology_1_cont_3 img:nth-child(2),
+.technology_1_cont span img{
+	display: block !important;
+}	
+.techWrap_3_main_p1_2, .techWrap_3_main_p6_2{   
+    position: absolute ;
+    top: 50%;
+    transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);	
+}
+.techWrap_3_main_p6_1{    
+    width: 55%;    
+    margin-left: 0;
+}
+.techWrap_3_main_p6_2{    
+    width: 45%;    
+    margin-left: 0;
+}
+.techWrap_3_main_p2, .techWrap_3_main_p3, .techWrap_3_main_p4, .techWrap_3_main_p5 {   
+    width: 75%;   
+}	
+.technology_2_photo_2_cont span {
+    left: 15px;
+    top: -185px;
+}	
+.technology_1_cont {
+    width: 340px;
+}
+.technology_1_cont_1 {
+    margin-left: -490px;
+}
+.technology_1_cont_3 {
+    margin-left: 150px;
+}
+.technology_1_cont_2 {
+    margin-left: -170px;
+}
+.technology_1_cont_1 span {
+    width: 145px;
+    top: -267px;
+    left: 139px;
+}	
+.technology_1_cont_2 span {
+    width: 45px;
+    top: -191px;
+    left: 151px;
+}	
+.technology_1_cont_3 span {
+    width: 330px;
+    top: -235px;
+    left: -149px;    
+    transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+}	
+.techWrap_3 h3 {   
+    width: 750px;   
+}	
+.techWrap_3_main {    
+    padding-bottom: 120px;
+}
+.techWrap_1_main_bg {  
+    height: 1035px;    
+}	
+.indexTop_dna {
+    width: 160px;
+    margin: 125px 0 0 -35px;
+}
+.secondWrap_shoe {
+    width: 635px;
+    margin: -110px 0 0px -185px;
+}
+.technology_1_wingShoe {   
+    bottom: -225px;    
+}	
+.techWrap_1_main {    
+    padding-bottom: 260px;
+}	
+.technology_1_wingLeft {    
+    bottom: -265px;    
+    margin-left: -380px;    
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+}	
+.technology_1_wingRight {   
+    bottom: -40px;   
+}	
+.techWrap_3_main_p1, .techWrap_3_main_p6 {
+    width: 90%;
+}	
+.techWrap_3_main_p2, .techWrap_3_main_p3, .techWrap_3_main_p4, .techWrap_3_main_p5 {
+    width: 80%;
+}	
+.buyNowWrap ul li {
+    width: 40%;    
+}
+.buyNowWrap ul li:nth-child(1), .buyNowWrap ul li:nth-child(2) {    
+    margin-bottom: 100px;
+}
+.buyNowWrap ul li:nth-child(1), .buyNowWrap ul li:nth-child(3) {    
+    margin-left: 10%;
+}
+.buyNowWrap ul li > div {    
+    margin: 15px auto 0;    
+    font-size: 30px;    
+}
+.buyNowWrap ul li a {    
+    width: 80%;
+    height: 60px;    
+}
+.buyNowWrap ul li a::before {    
+    margin-left: 80px;   
+}
+
+
+
+
+
+
+
+
+}
