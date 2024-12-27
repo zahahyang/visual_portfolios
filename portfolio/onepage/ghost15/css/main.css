@@ -1,0 +1,650 @@
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 950px;
+  background-color: #ffffff;
+  min-height: 100%;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.mainBg {
+  position: absolute;
+  width: 950px;
+  left: 50%;
+  top: 0;
+  margin-left: -475px;
+  z-index: 0;
+  background-color: #005eb8;
+  background-repeat: no-repeat;
+}
+
+/*------------------------------ transition---------------------------------*/
+.btn_goTop, .btn_goTop span, .demo_show li a {
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+}
+
+/*------------------------------ Header--------------------------------------*/
+.index {
+  width: 950px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+  margin: 0 auto;
+  min-height: 1300px;
+}
+
+.header {
+  position: relative;
+  background-image: url(../images/header-bk.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 1730px;
+  z-index: 200;
+}
+.ballom2{
+  position: absolute;
+  top: 11%;
+  left: 37%;
+  animation: floatballom 2s linear infinite;
+  -webkit-animation: floatballom 2s linear infinite;
+  -moz-animation: floatballom 2s linear infinite;
+}
+.ballom3{
+  position: absolute;
+  top: 10%;
+  right: 38%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+
+.br_logo{
+  position: absolute;
+  top: 57%;
+  left: 30%;
+}
+.ghost15{
+  position: absolute;
+  top: 63%;
+  left: 18%;
+}
+.step1{
+  position: absolute;
+  top: 71%;
+  left: 30%;
+}
+.title{
+  position: absolute;
+  top: 79%;
+  left: 17%;
+}
+.sub-title{
+  position: absolute;
+  top: 86%;
+  left: 17%;
+}
+.chinese{
+  position: absolute;
+  top: 91%;
+  left: 29%;
+}
+.pillow3{
+  position: absolute;
+  top: 41%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.pillow1{
+  position: absolute;
+  right: 23.5%;
+  top: 45.5%;
+}
+.pillow_3{
+  position: absolute;
+  top: 30%;
+  left: 34%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.pillow4{
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.pillow5{
+  position: absolute;
+  top: 26%;
+  right: 11%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+/*------------------------------ level up--------------------------------------*/
+.levelup {
+  position: relative;
+  background-image: url(../images/video1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 2171px;
+  z-index: 100;
+  margin-top: -22%;
+}
+.video-sub{
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+.visual-video{
+  position: absolute;
+  top: 78%;
+  left: 9%;
+}
+/*------------------------------ runnner--------------------------------------*/
+.runner {
+  position: relative;
+  background-image: url(../images/runner.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 5332px;
+  z-index: 99;
+  margin-top: -64%;
+}
+.runner-title{
+  position: absolute;
+  top: 14%;
+}
+.soles-x{
+  position: absolute;
+  top: 30%;
+  z-index: 102;
+  left: 22.3%;
+}
+.dnaloft2{
+  position: absolute;
+  height:  3576px;
+  top:30%;
+}
+.dnaloft_title{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.animations{
+  position: absolute;
+  top: 52%;
+  right: 19.7%;
+  z-index: 101;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+@keyframes scalebig {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.dnaloft_highlight{
+  position: absolute;
+  top: 27.5%;
+  left: 34%;
+  animation: move 0.5s linear infinite;
+  -webkit-animation: move 0.5s linear infinite;
+  -moz-animation: move 0.5s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(0,0);
+  }
+
+  20% {
+    transform: translate(20px,0);
+  }
+
+  40% {
+    transform: translate(25px,0);
+  }
+  60% {
+    transform: translate(25px,0);
+  }
+  80% {
+    transform: translate(20px,0);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+.n2{
+  position: absolute;
+  top: 41.5%;
+  right: 7%;
+
+}
+.n2_1{
+  position: absolute;
+  top: 60.5%;
+  right: 7%;
+
+}
+.ballom_1{
+  position: absolute;
+  top: 65%;
+  right: 38%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+@keyframes floatballom {
+  0% {
+    transform: translate(0,0);
+  }
+
+  20% {
+    transform: translate(0,20px);
+  }
+
+  40% {
+    transform: translate(0,25px);
+  }
+  60% {
+    transform: translate(0,25px);
+  }
+  80% {
+    transform: translate(0,20px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+/*------------------------------ runnner--------------------------------------*/
+.ghost_tech {
+  position: relative;
+  background-image: url(../images/running-tech.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 2834px;
+  z-index: 99;
+  margin-top: -19%;
+}
+.hight{
+  position: absolute;
+  top: 16.5%;
+  left: 10%;
+  animation: move 3s linear infinite;
+  -webkit-animation: move 3s linear infinite;
+  -moz-animation: move 3s linear infinite;
+}
+.weight{
+  position: absolute;
+  top: 14.5%;
+  right: 10%;
+  animation: move 3s linear infinite;
+  -webkit-animation: move 3s linear infinite;
+  -moz-animation: move 3s linear infinite;
+}
+.shoes-pu{
+  position: absolute;
+  top: 37%;
+  left: 8%;
+}
+.clouds{
+  position: absolute;
+  top: 42%;
+  right: 10%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.comfortable{
+  position: absolute;
+  top: 42%;
+  right: 10%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.vamp{
+  position: absolute;
+  top: 53.5%;
+  right: 6%;
+}
+.vamp1{
+  position: absolute;
+  top: 54.5%;
+  right: 6%;
+}
+.logo-shoes{
+  position: absolute;
+  top: 64.9%;
+  left: 0%;
+}
+.shoesback{
+  position: absolute;
+  top: 66%;
+  right: 25%;
+}
+.circle{
+  position: absolute;
+  top: 76%;
+  right: -2%;
+  z-index: 98;
+}
+.title2{
+  position: absolute;
+  top: 82%;
+  right: 30%;
+  z-index: 99;
+}
+.adjust{
+  position: absolute;
+  top: 77%;
+  right: 19%;
+  z-index: 100;
+}
+.soles{
+  position: absolute;
+  top: 77%;
+  right: 19%;
+  z-index: 101;
+}
+
+/*------------------------------ Video2--------------------------------------*/
+.video2 {
+  position: relative;
+  background-image: url(../images/video2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 1716px;
+  z-index: 99;
+}
+.video2-title{
+  position: absolute;
+  top: 8%;
+  left: 19%;
+}
+.ghost14{
+  position: absolute;
+  top: 34%;
+  left: 9%;
+}
+.ballom1{
+  position: absolute;
+  top: 24%;
+  right: 6%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.visual-video2{
+  position: absolute;
+  top: 62%;
+  left: 9%;
+  z-index: 98;
+}
+.box1{
+  position: absolute;
+  top: 57%;
+  left: 0;
+  z-index: 99;
+}
+.box2{
+  position: absolute;
+  top: 85%;
+  right: 0;
+  z-index: 99;
+}
+/*------------------------------ Eco--------------------------------------*/
+.eco {
+  position: relative;
+  background-image: url(../images/co2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 5407px;
+  z-index: 99;
+}
+.shoes-box{
+  position: absolute;
+  top: 64%;
+  z-index: 100;
+  left: 20%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.recycle{
+  position: absolute;
+  top: 25%;
+  right: 22%;
+  z-index: 100;
+}
+.recycle img{
+  width: 600px;
+
+}
+.co2{
+  position: absolute;
+  top: 28%;
+  right: 18%;
+  z-index: 100;
+}
+.co2 img{
+  width: 600px;
+}
+/*------------------------------ All shoes-------------------------------------*/
+.all-shoes {
+  position: relative;
+  background-image: url(../images/GHOST15_AE_2.gif);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 2457px;
+  z-index: 99;
+}
+
+/*-------------------------------ENDING-------------------------------------*/
+.ending {
+  position: relative;
+  background-image: url(../images/ending.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 1667px;
+  z-index: 98;
+}
+.buy{
+  position: absolute;
+  top: 85%;
+  left: 9%;
+  z-index: 99;
+}
+.store{
+  position: absolute;
+  top: 85%;
+  left: 37%;
+  z-index: 99;
+}
+.focus{
+  position: absolute;
+  top: 85%;
+  right:9%;
+  z-index: 99;
+}
+.ending-pillow1{
+  position: absolute;
+  top: 59%;
+  right: 15%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.ending-pillow2{
+  position: absolute;
+  top: 60%;
+  left: 21%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.ending-pillow3{
+  position: absolute;
+  top: 43%;
+  right: 7%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.ending-pillow4{
+  position: absolute;
+  top: 30%;
+  left: 11%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+.ending-pillow5{
+  position: absolute;
+  top: 35%;
+  right: 24%;
+  animation: floatballom 3s linear infinite;
+  -webkit-animation: floatballom 3s linear infinite;
+  -moz-animation: floatballom 3s linear infinite;
+}
+/*
+/*-------------------------------Footer-------------------------------------*/
+.footer {
+  position: relative;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 275px;
+  z-index: 98;
+}
+.brook_logo{
+  position: absolute;
+  top: 22%;
+  left: 21%;
+}
+.copyright{
+  position: absolute;
+  top: 68%;
+  left: 147px;
+}
+/*---------------------------videoWrap---------------------------*/
+.videoWrap {
+  width: 950px;
+  position: relative;
+  height: 800px;
+  z-index: 1;
+  background-image: url(../images/video_bg.png);
+  overflow: hidden;
+  top: 136%;
+}
+
+.video_TIT1 {
+  position: absolute;
+  width: 950px;
+  left: 0;
+  top: 385px;
+}
+
+.video_TIT2 {
+  position: absolute;
+  width: 950px;
+  left: 0;
+  bottom: 325px;
+}
+
+.video_main {
+  position: absolute;
+  width: 810px;
+  height: 490px;
+  left: 50%;
+  top: 48%;
+  background-color: #fff;
+  margin: -275px 0 0 -408px;
+}
+
+#sandalsmv {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  top: 1%;
+  left: 1%;
+}
+
+a.videoframe {
+  position: absolute;
+  z-index: 22;
+  top: 177%;
+  left: 6%;
+  width: 87%;
+}
+
+/*---------------------------btn_goTop---------------------------*/
+.btn_goTop {
+  position: fixed !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: rgb(240 200 204);
+  bottom: 10px;
+  left: 50%;
+  margin-left: 480px;
+  z-index: 999;
+  display: block;
+}
+
+.btn_goTop span {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 21px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -17px;
+  background-image: url(../images/goTop.png);
+}
+
+.btn_goTop:hover {
+  background-color: rgb(255, 185, 192);
+}
+
+.btn_goTop:hover.btn_goTop span {
+  margin: -15px 0 0 -17px;
+}

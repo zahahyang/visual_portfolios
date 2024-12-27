@@ -1,0 +1,1146 @@
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 950px;
+  background-color: #ffffff;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.mainBg {
+  position: absolute;
+  width: 950px;
+  left: 50%;
+  top: 0;
+  margin-left: -475px;
+  z-index: 0;
+  height: 3040px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+.sticky-top{
+  width: 950px;
+  margin: 0 auto;
+}
+.bg-sk{
+  background-color: #002c57;
+}
+a.navbar-brand{
+  margin-left: 20px;
+  margin-top: -5px;
+}
+ul.sociallink{
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 27px;
+  top: 5px;
+}
+ol.media{
+  padding-left: 10px;
+}
+ol.media a:hover{
+  color: #ff7e00;
+}
+/*------------------------------ transition---------------------------------*/
+.btn_goTop, .btn_goTop span, .demo_show li a {
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+}
+
+/*------------------------------ Opening--------------------------------------*/
+.cover{
+  width: 950px;
+  position: relative;
+  height: 1395px;
+  overflow: hidden;
+  z-index: 3;
+  margin: 0 auto;
+}
+.opening{
+  position: relative;
+  background-image:url(../images/opening/bk-1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1288px;
+  background-size: contain;
+}
+.gif2022{
+  position: absolute;
+  top: 20%;
+  left: 27%;
+}
+.gif2022 img{
+  width: 60%;
+}
+.opening-text{
+  position: absolute;
+  top: 33%;
+  left: 12%;
+}
+.sk-opening{
+  position: absolute;
+  top: 51%;
+  right: 18%;
+}
+.drawing1{
+  position:absolute;
+  top: 73%;
+  left: 11%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+  }
+.drawing2{
+  position:absolute;
+  right: 29%;
+  top: 74%;
+}
+.drawing3{
+  position:absolute;
+  right: 7%;
+  top: 65%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+}
+.drawing4{
+  position:absolute;
+  top: 28%;
+  right: 20%;
+}
+.drawing5{
+  position:absolute;
+  top: 24%;
+  left: 10%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+}
+@keyframes bottomTriangleShow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes bottomTriangleShow {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  10% {
+    -moz-transform: rotate(15deg);
+  }
+
+  20% {
+    -moz-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes bottomTriangleShow {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(15deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+/*------------------------------ Tennis Day--------------------------------------*/
+
+.tennis-day{
+  position: relative;
+  background-image:url(../images/BK.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:3814px;
+  background-size: contain;
+}
+.paper-line{
+  position: absolute;
+  left: 3.5%;
+  z-index: 2;
+}
+.tennis-bk{
+  position: relative;
+  z-index: 0;
+}
+.tennis-title{
+  position: absolute;
+  left: 14%;
+  z-index: 11;
+  top: 5%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.tennis-boy{
+  position: absolute;
+  left: 11%;
+  z-index: 11;
+  top: 14%;
+}
+.tennis-girl{
+  position: absolute;
+  right: 5%;
+  z-index: 11;
+  top: 22%;
+}
+.star{
+  position: absolute;
+  z-index: 12;
+  top: 13%;
+  left: 5%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.tennis-font{
+  position: absolute;
+  z-index: 12;
+  top: 15%;
+  right: 2%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+}
+.tennis-ball{
+  position: absolute;
+  z-index: 12;
+  right: 22%;
+  top: 18.54%;
+}
+.sunny{
+  position: absolute;
+  z-index: 12;
+  top: 36%;
+  left: 9%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+}
+.tennis-text{
+  position: absolute;
+  top: 45%;
+  left: 18%;
+}
+.tennis-button{
+  position:absolute;
+  z-index: 12;
+  top: 53%;
+  left: 27%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+}
+.tennis-boy1{
+  position: absolute;
+  z-index: 12;
+  left: 23.5%;
+  margin-top: 15%;
+}
+.tennis-girl1{
+  position: absolute;
+  z-index: 12;
+  left: 23.5%;
+  margin-top: 15%;
+}
+.swiper{
+  height: 2000px;
+}
+.shoes_1{
+  position: absolute;
+  z-index: 11;
+  top: 16%;
+}
+.shoes_2{
+  position: absolute;
+  z-index: 12;
+  top: 15%;
+  right: 29%;
+}
+.shoes_3{
+  position: absolute;
+  z-index: 12;
+  top: 21%;
+  left: -12%;
+}
+
+.shoes_4 {
+  position: absolute;
+  z-index: 12;
+  top: 48.5%;
+  left: -3%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+.shoes_5 {
+  position: absolute;
+  z-index: 12;
+  top: 54%;
+  left: -17%;
+}
+.shoes_6 {
+  position: absolute;
+  z-index: 12;
+  top: 59%;
+  left: 5%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+}
+/*------------------------------ Zoo Day--------------------------------------*/
+
+.zoo-day{
+  position: relative;
+  background-image:url(../images/BK-P2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:4215px;
+  background-size: contain;
+}
+.zoo-bk{
+  position: relative;
+  opacity: 0.7;
+  top: 1%;
+}
+.zoo-title{
+  position: absolute;
+  left: 20%;
+  z-index: 13;
+  top: 4%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.zoo-girl{
+  position: absolute;
+  right: 31%;
+  z-index: 15;
+  top: 10.5%;
+}
+.zoo-boy{
+  position: absolute;
+  right: 5%;
+  z-index: 15;
+  top: 10.5%;
+}
+.giraffe{
+  position: absolute;
+  z-index: 11;
+  top: 10%;
+  left: 5%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+
+}
+.underbrush1{
+  position: absolute;
+  z-index: 12;
+  top: 24%;
+}
+.underbrush2{
+  position: absolute;
+  z-index: 13;
+  top: 28%;
+}
+.underbrush3{
+  position: absolute;
+  z-index: 14;
+  top: 27.8%;
+}
+.elephant{
+  position: absolute;
+  z-index: 12;
+  top: 20%;
+}
+.grass{
+  position: absolute;
+  z-index: 12;
+  right: 0;
+  top: 9%;
+}
+.title{
+  position: absolute;
+  z-index: 15;
+  left: 10%;
+  top: 32%;
+  animation: move 3s linear infinite;
+  -webkit-animation: move 3s linear infinite;
+  -moz-animation: move 3s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(0,0);
+  }
+
+  20% {
+    transform: translate(20px,0);
+  }
+
+  40% {
+    transform: translate(25px,0);
+  }
+  60% {
+    transform: translate(25px,0);
+  }
+  80% {
+    transform: translate(20px,0);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+.zoo_text{
+  height: 1038px;
+}
+.underbrush4{
+  position: absolute;
+  z-index: 14;
+  top: 52%;
+}
+.underbrush5 {
+    position: absolute;
+    z-index: 15;
+    top: 55.2%;
+    right: 0;
+}
+.monkey{
+  position: absolute;
+  z-index: 13;
+  top: 51%;
+  left: 10%;
+  animation: move 1.5s linear infinite;
+  -webkit-animation: move 1.5s linear infinite;
+  -moz-animation: move 1.5s linear infinite;
+}
+.rabbit{
+  position: absolute;
+  z-index: 14;
+  top: 52.5%;
+  right: 30%;
+  animation: move 3s linear infinite;
+  -webkit-animation: move 3s linear infinite;
+  -moz-animation: move 3s linear infinite;
+}
+.zootext1{
+  position: absolute;
+  z-index: 14;
+  top: 40%;
+  left: 8%;
+}
+.take-picture{
+  position: absolute;
+  z-index: 14;
+  top: 46%;
+  left: 7%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.zoo-boy1{
+  position: absolute;
+  z-index: 12;
+  left: 22%;
+  margin-top: 30%;
+}
+.zoo-girl1{
+  position: absolute;
+  z-index: 12;
+  left: 22%;
+  margin-top: 30%;
+}
+.paper-line.zoo{
+  top:60%;
+}
+
+.shoes_3.zoo{
+  top:39%;
+}
+.shoes_2.zoo{
+  top:18%;
+}
+.shoes_2.zoo1{
+  top: 21%;
+  right: 27%;
+}
+/*------------------------------ Picnic Day--------------------------------------*/
+
+.pincnic-day{
+  position: relative;
+  background-image:url(../images/BK-P3.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:4215px;
+  background-size: contain;
+}
+.pincnic-bk{
+  position: relative;
+  opacity: 1;
+  top: 9%;
+}
+.pincnic-title{
+  position: absolute;
+  left: 20%;
+  z-index: 13;
+  top: 4%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.pincnic-kid{
+  position: absolute;
+  left: 20%;
+  z-index: 13;
+  top: 9%;
+}
+.pincnic_text{
+  position: relative;
+  height: 1500px;
+  top:8%;
+  margin-bottom: 12%;
+}
+.saken{
+  position: absolute;
+  top: 62%;
+  right: 0;
+}
+.saken-boy{
+  position: absolute;
+  top: 27%;
+  left: 8%;
+  animation: move 1.5s linear infinite;
+  -webkit-animation: move 1.5s linear infinite;
+  -moz-animation: move 1.5s linear infinite;
+
+}
+.park-text{
+  position: absolute;
+  top: 13%;
+  left: 16%;
+}
+.havefun{
+  position: absolute;
+  top: 23%;
+  left: 28%;
+}
+.pincnicbtn{
+  position: absolute;
+  top: 50%;
+  right: 23%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.shoes_2.pincnic1 {
+  top: 20%;
+  right: 23%;
+}
+.shoes_3.pincnic1 {
+  left: 2%;
+  top: 37%;
+}
+.shoes_4.pincnic {
+  top: 51%;
+  left: -14%;
+}
+.shoes_5.pincnic  {
+  top: 57%;
+  left: -8%;
+}
+.shoes_6.pincnic  {
+  top: 63%;
+  left: 8%;
+}
+.shoes-logo.pincnic-girl{
+  position: absolute;
+  left: -7%;
+}
+.shoes_2.colorshoes{
+  position: absolute;
+  right: 23%;
+  top: 17%;
+
+}
+/*------------------------------ Grandma Day--------------------------------------*/
+
+.grandma-day{
+  position: relative;
+  background-image:url(../images/BK-P4.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:5175px;
+  background-size: contain;
+}
+.grandma-bk{
+  position: relative;
+  opacity: 1;
+  top: 1%;
+}
+.home{
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.love{
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+@keyframes scalebig {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.grandma-boy{
+  position: absolute;
+  top: 10.5%;
+  right: 6%;
+}
+.grandma-girl{
+  position: absolute;
+  left: 11%;
+  top: 21%;
+  z-index: 11;
+}
+.tree{
+  position: absolute;
+  right: 7%;
+  top: 8%;
+}
+.family{
+  position: absolute;
+  right: 4%;
+  top: 27%;
+  z-index: 10;
+}
+.grandma_text{
+  position: relative;
+  height: 1300px;
+  top: 2%;
+}
+.gift1{
+  position: absolute;
+  left: 6%;
+  top: 25%;
+
+}
+.gift2{
+  position: absolute;
+  right: 6%;
+  top: 31%;
+
+}
+.gift3{
+  position: absolute;
+  left: 34%;
+  top: 12%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+
+}
+.grandmatext{
+  position: absolute;
+  left: 12%;
+  top: 52%;
+}
+
+.grandmabtn{
+  position: absolute;
+  top: 73%;
+  right: 29%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.paper-line.grandma{
+
+}
+.shoes_3.grandma {
+  left: -1%;
+  top: 31%;
+}
+.shoes_4.grandma {
+  top: 51.5%;
+  left: 0%;
+}
+.shoes_5.grandma  {
+  top: 58%;
+  left: -8%;
+}
+.shoes_6.grandma  {
+  top: 63%;
+  left: 14%;
+}
+.grandma-boy1{
+  z-index: 12;
+  left: 15%;
+  margin-top: 22%
+}
+.grandma-girl1{
+  z-index: 12;
+  left: 15%;
+  margin-top: 22%
+}
+.shoes-logo.grandmagirl{
+  position: absolute;
+  left: 4%;
+}
+.shoes_1.grandmagirl1{
+  right: 27%;
+}
+.shoes_2.sweet-light{
+  right: 16%;
+  top: 20%;
+}
+.shoes_3.heart{
+  top: 32%;
+  left: 4%;
+}
+/*------------------------------ Study Day--------------------------------------*/
+
+.study-day{
+  position: relative;
+  background-image:url(../images/BK-P5.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:5175px;
+  background-size: contain;
+}
+.study-bk{
+  position: relative;
+  opacity: 1;
+  top: 12%;
+}
+.studykids{
+  position: absolute;
+  left: 15%;
+  top: 11%;
+}
+.studybooks{
+  position: absolute;
+  top: 9%;
+  left: 17%;
+  animation: moveup 3s linear infinite;
+  -webkit-animation: moveup 3s linear infinite;
+  -moz-animation: moveup 3s linear infinite;
+}
+@keyframes moveup {
+  0% {
+    transform: translate(0,0);
+  }
+
+  20% {
+    transform: translate(0,20px);
+  }
+
+  40% {
+    transform: translate(0,25px);
+  }
+  60% {
+    transform: translate(0,25px);
+  }
+  80% {
+    transform: translate(0,20px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+.studypen{
+  position: absolute;
+  top: 8.5%;
+  right: 37%;
+  animation: moveup 3s linear infinite;
+  -webkit-animation: moveup 3s linear infinite;
+  -moz-animation: moveup 3s linear infinite;
+}
+.study_text{
+  position: relative;
+  height: 2000px;
+  top: 17%;
+  margin-bottom: 50%;
+}
+
+.studybtn{
+  position: absolute;
+  top: 84%;
+  right: 24%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.red-books{
+  position: absolute;
+  top: 33%;
+  left: 8%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.green-books{
+  position: absolute;
+  top: 33%;
+  right: 7%;
+  animation: moveup 3s linear infinite;
+  -webkit-animation: moveup 3s linear infinite;
+  -moz-animation: moveup 3s linear infinite;
+}
+.lightbumb{
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  animation: scalebig 3s linear infinite;
+  -webkit-animation: scalebig 3s linear infinite;
+  -moz-animation: scalebig 3s linear infinite;
+}
+.study2kids{
+  position: absolute;
+  top: 23%;
+  left: 18%;
+}
+.studytext{
+  position: absolute;
+  top: 5%;
+  left: 19%;
+}
+.studytext2{
+  position: absolute;
+  top: 17%;
+  left: 14%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.paper-line.study{
+  top:68%;
+}
+.study-boy1{
+  z-index: 12;
+  left: 15%;
+  margin-top: 54%;
+}
+.study-girl1{
+  z-index: 12;
+  left: 15%;
+  margin-top: 54%;
+}
+.shoes-logo.study{
+  position: absolute;
+  left: 10%;
+}
+.shoes_1.study{
+  position: absolute;
+  top: 10%;
+  left: 3%;
+}
+.shoes_2.study{
+  top: 10%;
+  right: 16%;
+}
+.shoes_3.study{
+  top: 16%;
+  left: -3%;
+}
+.shoes_4.study{
+  top: 49%;
+  left: 5%;
+}
+.shoes_5.study{
+  top: 57%;
+  left: 11%;
+}
+.shoes_6.study{
+  top: 63%;
+  left: 9%;
+}
+
+/*------------------------------ Outdoor Day--------------------------------------*/
+
+.outdoor-day{
+  position: relative;
+  background-image:url(../images/BK-P6.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:4266px;
+  background-size: contain;
+}
+.study-bk{
+  position: relative;
+  opacity: 1;
+  top: 12%;
+}
+.outdoorkid{
+  position: absolute;
+  top: 11%;
+  right: 10%;
+}
+.outdoorkid1{
+  z-index: 12;
+  position: absolute;
+  top: 13%;
+  left: 20%;
+}
+.left-grass{
+  position: absolute;
+  top: 26%;
+}
+.bird{
+  position: absolute;
+  top: 26%;
+  left: 5%;
+  animation: move 3s linear infinite;
+  -webkit-animation: move 3s linear infinite;
+  -moz-animation: move 3s linear infinite;
+}
+.outdoor_text{
+  position: relative;
+  height: 1100px;
+  top: 2%;
+  margin-bottom: 10%;
+}
+.outdoor_grass{
+  position: absolute;
+  top: 57%;
+  z-index: 12;
+}
+.bear{
+  position: absolute;
+  top: 51%;
+  left: 10%;
+  z-index: 12;
+  animation: move 3s linear infinite;
+  -webkit-animation: move 3s linear infinite;
+  -moz-animation: move 3s linear infinite;
+}
+.lion{
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  animation: move 1.5s linear infinite;
+  -webkit-animation: move 1.5s linear infinite;
+  -moz-animation: move 1.5s linear infinite;
+}
+.outdoor_text2{
+  position:absolute;
+  top: 5%;
+  left: 10%;
+
+}
+.outdoorbtn{
+  position:absolute;
+  top: 35%;
+  left: 27%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.paper-line.outdoor{
+  top:61%;
+}
+.outdoor-boy1{
+  z-index: 12;
+  left: 14%;
+  margin-top: 6%;
+}
+.outdoor-girl1{
+  z-index: 12;
+  left: 14%;
+  margin-top: 6%;
+}
+.shoes-logo.study{
+  position: absolute;
+  left: 10%;
+}
+.shoes_1.outdoor{
+  position: absolute;
+  top: 19%;
+  left: 3%;
+}
+.shoes_2.outdoor{
+  top: 16%;
+  right: 16%;
+}
+.shoes_3.outdoor{
+  top: 39%;
+  left: 7%;
+}
+.shoes_4.outdoor{
+  top: 12%;
+  left: 22%;
+}
+.shoes_5.outdoor{
+  top: 53%;
+  left: -1%;
+}
+.shoes_6.outdoor{
+  top: 67%;
+  left: 14%;
+}
+
+/*------------------------------ Ending--------------------------------------*/
+
+.ending{
+  position: relative;
+  background-image:url(../images/BK-ending.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height:2000px;
+  background-size: contain;
+}
+.ending1{
+  position: absolute;
+  top: 15%;
+  left: 17%;
+}
+.ending-boy{
+  position: absolute;
+  top: 34%;
+  left: 11%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.ending-dog{
+  position: absolute;
+  top: 19%;
+  left: 15%;
+  animation: bottomTriangleShow 3s linear infinite;
+  -webkit-animation: bottomTriangleShow 3s linear infinite;
+  -moz-animation: bottomTriangleShow 3s linear infinite;
+}
+.ending-elephant{
+  position: absolute;
+  top: 19%;
+  right: 3%;
+  animation: bottomTriangleShow 1.5s linear infinite;
+  -webkit-animation: bottomTriangleShow 1.5s linear infinite;
+  -moz-animation: bottomTriangleShow 1.5s linear infinite;
+}
+.ending-sale{
+  position: absolute;
+  top: 42%;
+  left: 24%;
+}
+.ending-store{
+  position: absolute;
+  top: 42%;
+  right: 19%;
+}
+.ending-group{
+  position: relative;
+  top: 51%;
+}
+/*------------------------------ Footer--------------------------------------*/
+
+.footer{
+  position: relative;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+a.footerlogo{
+  position: absolute;
+  left: 10.5%;
+  top:20%;
+}
+
+
+
+
+
+/*---------------------------btn_goTop---------------------------*/
+.btn_goTop {
+  position: fixed !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: #0063ba;
+  bottom: 10px;
+  left: 50%;
+  margin-left: 480px;
+  z-index: 999;
+  display: block;
+}
+
+.btn_goTop span {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 21px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -17px;
+  background-image: url(../images/goTop.png);
+}
+
+.btn_goTop:hover {
+  background-color: rgb(255, 185, 192);
+}
+
+.btn_goTop:hover.btn_goTop span {
+  margin: -15px 0 0 -17px;
+}
