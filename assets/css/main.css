@@ -1660,6 +1660,13 @@ li.showdaily_information{
     width: 85%;
     margin-left: 10%;
   }
+  .portfolio-info{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  ul.showdaily_showcase{
+    width: 85%;
+  }
 }
 /* 1/10 Page Not Found*/
 
