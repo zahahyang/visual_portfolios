@@ -1644,6 +1644,21 @@ li.showdaily_information{
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-left: 5%;
+  }
+  p.showdaily_des{
+    width: 85%;
+    margin-left: 5%
+  }
+  p.showdaily_title_1{
+    margin-left: 5%;
+  }
+  p.showdaily_des_1{
+    margin-left: 5%;
+  }
+  p.p.showdaily_des{
+    width: 85%;
+    margin-left: 10%;
   }
 }
 /* 1/10 Page Not Found*/
