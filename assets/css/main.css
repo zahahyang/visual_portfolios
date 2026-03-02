@@ -1126,7 +1126,7 @@ section,
 }
 
 .gallery-details .portfolio-description h2 {
-  font-size: 26px;
+  font-size: 34px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1374,7 +1374,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# News css -index
+# News css 
 --------------------------------------------------------------*/
 .main_logo {
   width: 20%;
@@ -1423,10 +1423,255 @@ p.service{
   letter-spacing: 1px;
   line-height: 32px;
 }
+.index_geocan img{
+  width: 95%;
+}
+p.index_title{
+  font-family: var(--heading-font);
+  font-size: 50pt;
+  color: #e24253;
+  margin-bottom: 15px;
+}
+p.index_title1{
+  font-size: 24pt;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: -15px;
 
-@media (min-width: 1200px) {
+}
+.index_information{
+  margin-top: 120px;
+}
+.index_information hr{
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+p.index_information_1{
+  width: 85%;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+.index_sub_title{
+  padding-bottom: 120px;
+  padding-top: 60px;
+}
+p.index_subtitle{
+  font-size:4em;
+  font-family: var(--heading-font);
+}
+.index_sub_inf hr{
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+p.index-service{
+  font-size: 15pt;
+  letter-spacing: 1px;
+  line-height: 30pt;
+  margin-bottom: 60px;
+}
+a.cta-btn.contact{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+a.cta-btn.contact:hover{
+  color: #e24253
+  border: 1px solid #e24253;
+  padding: 15px;
+  border-radius: 20px;
+}
+@media screen and (min-width: 1200px) {
   .navmenu {
       padding: 0;
       margin-left: -17%;
   }
 }
+/*--------------------------------------------------------------
+# Showdaily CSS#
+--------------------------------------------------------------*/
+h2.showdaily_title{
+  color:yellow;
+}
+p.showdaily_des{
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 800;
+}
+p.showdaily_title_1{
+  color: yellow;
+  font-size: 20px;
+  font-weight: 900;
+}
+li.showdaily_information{
+  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------------
+# Service CSS#
+--------------------------------------------------------------*/
+.service-item p.service_title.serviveitem{
+  font-size: 40px;
+  padding-bottom: 20px; 
+}
+.cta-btn.service{
+  margin-top: 30px;
+
+}
+.cta-btn.service:hover{
+ color: #ffffff; 
+}
+
+/*--------------------------------------------------------------
+# Gallery Details Section / index
+--------------------------------------------------------------*/
+.gallery-details_1 .portfolio-details-slider img {
+  width: 100%;
+}
+
+.gallery-details_1 .swiper-wrapper {
+  height: auto;
+}
+
+.gallery-details_1 .swiper-button-prev,
+.gallery-details_1 .swiper-button-next {url(../../portfolio/visual/visual.html)
+  width: 48px;
+  height: 48px;
+}
+
+.gallery-details_1 .swiper-button-prev:after,
+.gallery-details_1 .swiper-button-next:after {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.gallery-details_1 .swiper-button-prev:hover:after,
+.gallery-details_1 .swiper-button-next:hover:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 575px) {
+
+  .gallery-details_1 .swiper-button-prev,
+  .gallery-details_1 .swiper-button-next {
+    display: inline;
+  }
+}
+
+.gallery-details_1 .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.gallery-details_1 .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.gallery-details_1 .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# RWD CSS# Mobile Size
+--------------------------------------------------------------*/
+
+@media screen and (max-width:768px){
+  .main_logo {
+    width: 65%;
+    margin-left: 1px;
+    margin-top: 1px;
+  }
+  section.gallery-details_1.section.banner{
+    padding: 30px 0;
+  }
+  section.heros.section{
+    padding: 30px 0;
+  }
+  .index_geocan{
+    margin-left: 20px;
+  }
+  .index_information{
+    width: 98%;
+    margin: 30px;
+
+  }
+  p.index_title1{
+    font-size: 18pt;
+  }
+  p.index_information_1 {
+    font-size: 14pt;
+  }
+  p.index_subtitle {
+    font-size: 3em;
+    font-family: var(--heading-font);
+  }
+  p.index-service {
+    font-size: 14pt;
+    letter-spacing: 1px;
+    line-height: 30pt;
+    margin-bottom: -10px;
+  }
+  .contact_btns{
+    margin-top: 50px;
+  }
+  p.service {
+    padding: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .gallery-details .portfolio-description h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
+/* 1/10 Page Not Found*/
+
+p.page_not_found{
+  font-size: 200pt;
+  margin-top: 40pt;
+  text-align: center;
+  font-family: var(--heading-font);
+
+}
+
+p.page_not_found_1{
+  font-size: 50pt;
+  margin-top: -60pt;
+  text-align: center;
+  font-family: var(--heading-font);
+  
+}
+p.page_not_found_2{
+  font-size: 14pt;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
