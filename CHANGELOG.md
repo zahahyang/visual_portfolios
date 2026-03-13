@@ -9,6 +9,61 @@
 
 ---
 
+## [2026-03-13] — Logo 顯示修正
+
+### Fixed — `main.css`（Logo 圖片尺寸）
+- 修正全站 Header Logo 顯示異常：原本巢狀 `<a>` 結構（無效 HTML）導致瀏覽器將 `.main_logo` 解析為 `.logo` 外部，使 `.header .logo img { max-height: 36px }` 未套用
+- 改為合法 HTML 結構後，`max-height: 36px` 開始生效，Logo 被壓縮至 36px 高
+- 新增 `.main_logo img { max-height: none; width: 100% }` 覆蓋樣式，使 Logo 依 `.main_logo` 容器寬度正確顯示
+
+---
+
+## [2026-03-13] — 樣式表一致性稽核
+
+### Fixed — 全站 `<head>` 結構統一
+
+**Google Fonts 精簡（所有頁面）：**
+- `about.html`、`contact.html`、`404.html`、`starter-page.html`
+- `portfolio/visual/visual.html`、`portfolio/onepage/onepage.html`
+- `portfolio/showdaily/showdaily.html`、`portfolio/graphic/grapghic_new.html`
+- 以上 8 個檔案的 Google Fonts URL 由 18/9/4 字重版本統一更新為精簡版（Roboto 3、Inter 2、Cardo 3 字重）
+
+**補上 `</head>` 結束標籤：**
+- `contact.html`、`404.html`、`starter-page.html`
+- `portfolio/visual/visual.html`、`portfolio/onepage/onepage.html`
+- `portfolio/showdaily/showdaily.html`、`portfolio/graphic/grapghic_new.html`
+
+**補上 Cookiebot + GA4 + GTM（404.html、starter-page.html）：**
+- 原本完全缺少追蹤腳本，已補齊 Cookiebot、GA4（G-KKQX5VGH6W / AW-11490189438）、GTM（GTM-K9VT48MV）
+
+**補上 Cookiebot（visual.html、grapghic_new.html）：**
+- 原本有 GA4 + GTM 但缺少 Cookiebot，已補上
+
+### Fixed — Logo 巢狀 `<a>` 標籤（全站）
+
+- `about.html`、`contact.html`、`404.html`、`starter-page.html`
+- `portfolio/visual/visual.html`、`portfolio/onepage/onepage.html`
+- `portfolio/showdaily/showdaily.html`、`portfolio/graphic/grapghic_new.html`
+- 全部移除外層 `<a class="logo">` 內部巢狀的 `<a target="_blank">` wrapper（無效 HTML），改為直接放 `<img>` 於 `.main_logo` div
+- 修正 `about.html` 孤兒 `</a>` 閉合標籤（logo 區塊後多出一個多餘的 `</a>`）
+
+### Fixed — 導覽列 active 狀態
+- `about.html`：原 `class="active"` 在 Home → 已移至 About
+- `contact.html`：原 `class="active"` 在 Home → 已移至 Contact
+- `404.html`：原 `class="active"` 在 Contact（錯誤） → 已移除（404 頁無 active 項目）
+
+### Fixed — 導覽列連結與選單項目
+- `404.html`：Nav 使用舊版佔位連結（`portfolio.html`、`Portfolio_single.html`、`Video`）→ 全部更新為正確路徑，並補上 Branding、Before Portfolio
+- `starter-page.html`：Nav 缺少 Branding 與 Before Portfolio → 已補上
+- `404.html` dropdown toggle：`<a href="portfolio.html">` → `<a href="#">`（非連結用途的 dropdown 觸發器不應有 href 目標）
+
+### Fixed — `404.html` 其他
+- Body class：`starter-page-page` → `404-page`
+- Footer 社群連結：Facebook 與 Instagram 原本全部指向 LINE 網址 → 已分別更正
+- `showdaily.html` logo outer `<a>`：`href="index.html"` → `href="../../index.html"`（路徑層級錯誤）
+
+---
+
 ## [2026-03-13]
 
 ### Performance — `index.html` & `services.html`（載入速度優化）

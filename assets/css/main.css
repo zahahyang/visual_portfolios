@@ -1367,6 +1367,10 @@ section,
   margin-left: -30%;
   margin-top: 10px;
 }
+.main_logo img {
+  max-height: none;
+  width: 100%;
+}
 p.title{
   font-size: 32px;
   font-family: 'Cardo';
