@@ -28,6 +28,30 @@
   - `testimonials-1~5.jpg` : 共省約 66KB
 - 待辦：Cookiebot `data-blockingmode="auto"` 會阻塞渲染，建議與 GDPR 需求評估後調整
 
+### Optimize — `main.css`（CSS 全面優化）
+**Bug 修正：**
+- 修正 `@keyframes preloaderfinish`：`width: 5 0%` → `width: 50%`（空格導致 preloader 動畫失效）
+- 修正 `margin: 0 0 15px 0 0 0`（6 個值，CSS 最多接受 4 個）→ `margin: 0 0 15px 0`
+- 修正 `.service-item p.service_title.serviveitem`：拼字錯誤 `serviveitem` → `serviceitem`，服務項目大字體一直沒有套用
+- 修正 `p.p.showdaily_des`：無效的雙 tag 選擇器 → `p.showdaily_des`
+- 移除重複的 `.page-title .heading .cta-btn` 定義（兩份規則，僅差 margin-top，保留正確版）
+- 移除重複的 `/* RWD CSS# Mobile Size */` 空白區塊
+
+**單位優化（`pt` → `px` / `rem`）：**
+- 所有 `pt` 印刷單位改為螢幕適用的 `px` 或 `rem`（影響 `index_title`、`index_title1`、`index_information_1`、`index-service`、`page_not_found` 系列）
+- `404` 頁面標題改用 `clamp()` 自適應字體，行動裝置不再溢出
+
+**色彩變數化：**
+- 全站硬寫的 `#a5be00` 替換為 `var(--accent-color)`
+- 全站硬寫的 `#ffffff` / `#fff` 替換為 `var(--contrast-color)` 或 `var(--heading-color)`（視語境）
+- `.cta-btn.contact:hover` 移除重複的 `padding` 與 `border-radius`（與原始值相同）
+
+### Fixed — `main.css`（RWD 修正）
+- 修正 CSS 語法錯誤：`url(../../portfolio/visual/visual.html)` 誤插入 `.gallery-details_1 .swiper-button` 規則內，導致 Banner 箭頭 `width` 失效，已移除
+- 修正手機版 Banner 箭頭 `display: inline` → `display: flex`（原值對區塊元素無效）
+- 補上 Tablet 斷點（769px–1199px）：補充 `.main_logo`、`.index_information`、`p.index_title`、`p.index_title1`、`p.index_information_1`、`p.index_subtitle`、`p.index-service` 在平板尺寸的合適樣式
+- 補上手機版 `p.index_title`（"Hello!"）字體縮小規則：`50pt → 32pt`（原本手機沒有調整此元素）
+
 ### Fixed — `services.html`（連結 & 文字）
 - 修正服務項目「Onepage」Read more 連結：原指向 `portfolio/visual/visual.html` → 更正為 `portfolio/onepage/onepage.html`
 - 修正服務項目「ShowDaily」Read more 連結：原指向 `portfolio/visual/visual.html` → 更正為 `portfolio/showdaily/showdaily.html`

@@ -593,7 +593,7 @@ h6 {
 
 @keyframes preloaderfinish {
   0% {
-    width: 5 0%;
+    width: 50%;
   }
 
   100% {
@@ -660,20 +660,6 @@ h6 {
 .page-title .heading h1 {
   font-size: 64px;
   font-weight: 400;
-}
-
-.page-title .heading .cta-btn {
-  color: var(--default-color);
-  background: var(--accent-color);
-  font-weight: 400;
-  font-size: 14px;
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .page-title .heading .cta-btn:hover {
@@ -1186,7 +1172,7 @@ section,
 
 .gallery-details .portfolio-description .testimonial-item p {
   font-style: italic;
-  margin: 0 0 15px 0 0 0;
+  margin: 0 0 15px 0;
   padding: 0;
 }
 
@@ -1411,12 +1397,12 @@ p.service{
   line-height: 30px;
   margin-top: 20px;
 }
-.service-item p.service_title{
+.service-item p.service_title {
   font-size: 30px;
   font-weight: 600;
   padding-top: 20px;
   padding-bottom: 30px;
-  color: #a5be00;
+  color: var(--accent-color);
 }
 .service-item p.service_information {
   font-size: 16px;
@@ -1428,16 +1414,15 @@ p.service{
 }
 p.index_title{
   font-family: var(--heading-font);
-  font-size: 50pt;
-  color: #a5be00;
+  font-size: 67px;
+  color: var(--accent-color);
   margin-bottom: 15px;
 }
 p.index_title1{
-  font-size: 24pt;
-  color: #ffffff;
+  font-size: 32px;
+  color: var(--heading-color);
   font-weight: 700;
   margin-top: -15px;
-
 }
 .index_information{
   margin-top: 120px;
@@ -1448,10 +1433,10 @@ p.index_title1{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-p.index_information_1{
+p.index_information_1 {
   width: 85%;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 1.1rem;
+  line-height: 2.2;
   letter-spacing: 1px;
   margin-bottom: 60px;
 }
@@ -1469,24 +1454,22 @@ p.index_subtitle{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-p.index-service{
-  font-size: 15pt;
+p.index-service {
+  font-size: 1.1rem;
   letter-spacing: 1px;
-  line-height: 30pt;
+  line-height: 2.2;
   margin-bottom: 60px;
 }
-a.cta-btn.contact{
-  color: #fff;
-  border: 1px solid #fff;
+a.cta-btn.contact {
+  color: var(--contrast-color);
+  border: 1px solid var(--contrast-color);
   padding: 15px;
   border-radius: 20px;
 }
 
-a.cta-btn.contact:hover{
-  color: #a5be00;
-  border: 1px solid #a5be00;
-  padding: 15px;
-  border-radius: 20px;
+a.cta-btn.contact:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 @media screen and (min-width: 1200px) {
   .navmenu {
@@ -1520,9 +1503,9 @@ li.showdaily_information{
 /*--------------------------------------------------------------
 # Service CSS#
 --------------------------------------------------------------*/
-.service-item p.service_title.serviveitem{
+.service-item p.service_title.serviceitem {
   font-size: 40px;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 .cta-btn.service{
   margin-top: 30px;
@@ -1544,7 +1527,7 @@ li.showdaily_information{
 }
 
 .gallery-details_1 .swiper-button-prev,
-.gallery-details_1 .swiper-button-next {url(../../portfolio/visual/visual.html)
+.gallery-details_1 .swiper-button-next {
   width: 48px;
   height: 48px;
 }
@@ -1572,7 +1555,7 @@ li.showdaily_information{
 
   .gallery-details_1 .swiper-button-prev,
   .gallery-details_1 .swiper-button-next {
-    display: inline;
+    display: flex;
   }
 }
 
@@ -1593,9 +1576,40 @@ li.showdaily_information{
 }
 
 /*--------------------------------------------------------------
+# RWD CSS# Tablet Size (769px - 1199px)
+--------------------------------------------------------------*/
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .main_logo {
+    width: 22%;
+    margin-left: -10%;
+    margin-top: 5px;
+  }
+  .index_information {
+    margin-top: 40px;
+  }
+  p.index_title {
+    font-size: 51px;
+  }
+  p.index_title1 {
+    font-size: 27px;
+  }
+  p.index_information_1 {
+    font-size: 1rem;
+    line-height: 2;
+    width: 95%;
+  }
+  p.index_subtitle {
+    font-size: 3em;
+  }
+  p.index-service {
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
+
+/*--------------------------------------------------------------
 # RWD CSS# Mobile Size
 --------------------------------------------------------------*/
-
 @media screen and (max-width:768px){
   .main_logo {
     width: 40%;
@@ -1616,20 +1630,23 @@ li.showdaily_information{
     margin: 30px;
 
   }
-  p.index_title1{
-    font-size: 18pt;
+  p.index_title {
+    font-size: 43px;
+  }
+  p.index_title1 {
+    font-size: 24px;
   }
   p.index_information_1 {
-    font-size: 14pt;
+    font-size: 0.95rem;
   }
   p.index_subtitle {
     font-size: 2.5em;
     font-family: var(--heading-font);
   }
   p.index-service {
-    font-size: 14pt;
+    font-size: 0.95rem;
     letter-spacing: 1px;
-    line-height: 30pt;
+    line-height: 2;
     margin-bottom: -10px;
   }
   .contact_btns{
@@ -1656,7 +1673,7 @@ li.showdaily_information{
   p.showdaily_des_1{
     margin-left: 5%;
   }
-  p.p.showdaily_des{
+  p.showdaily_des{
     width: 85%;
     margin-left: 10%;
   }
@@ -1670,23 +1687,22 @@ li.showdaily_information{
 }
 /* 1/10 Page Not Found*/
 
-p.page_not_found{
-  font-size: 200pt;
-  margin-top: 40pt;
+p.page_not_found {
+  font-size: clamp(80px, 18vw, 267px);
+  margin-top: 53px;
   text-align: center;
   font-family: var(--heading-font);
-
 }
 
-p.page_not_found_1{
-  font-size: 50pt;
-  margin-top: -60pt;
+p.page_not_found_1 {
+  font-size: clamp(32px, 5vw, 67px);
+  margin-top: -60px;
   text-align: center;
   font-family: var(--heading-font);
-  
 }
-p.page_not_found_2{
-  font-size: 14pt;
+
+p.page_not_found_2 {
+  font-size: 1rem;
   text-align: center;
 }
 
