@@ -483,15 +483,15 @@
       { category:'graphic', titleZh:'國合會招募志工燈箱', titleEn:'TaiwanICDF Volunteer Lightbox', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/2018tov/lightbox_mockup.jpg' },
       { category:'graphic', titleZh:'樂學食驗室包裝設計', titleEn:'Food Lab Packaging', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/package.jpg' },
       { category:'graphic', titleZh:'藥廠包裝設計', titleEn:'Pharmaceutical Packaging', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/barrgel.jpg' },
-      { category:'graphic', titleZh:'扣件電子書封面', titleEn:'Fastener E-book Cover', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/scews_cover.jpg' },
+      { category:'graphic', titleZh:'扣件電子書封面', titleEn:'Fastener E-book Cover', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/scews_cover.jpg', thumb:'assets/img/portfolio-thumbs/scews_cover.jpg' },
       { category:'graphic', titleZh:'扣件電子書內頁', titleEn:'Fastener E-book Editorial', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/scew_information.jpg' },
       { category:'graphic', titleZh:'胸腔內科醫學會邀請函', titleEn:'Medical Society Invitation', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/inviation.jpg' },
       { category:'graphic', titleZh:'CENS APP DM', titleEn:'CENS App DM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/dm/app_dm.jpg' },
       { category:'graphic', titleZh:'CENS 服務平台 DM', titleEn:'CENS Service Platform DM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/dm/service_dm.jpg' },
       { category:'graphic', titleZh:'CENS TTG 汽車零配件電子書', titleEn:'CENS TTG Automotive E-book', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/dm/ttg_dm.jpg' },
-      { category:'graphic', titleZh:'益和電子客製化電子報', titleEn:'Microtest Custom EDM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/edm/edm_microtest.jpg' },
-      { category:'graphic', titleZh:'立昌工業古董車電子報', titleEn:'Li Chang Classic Car EDM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/edm/edm_lc.jpg' },
-      { category:'graphic', titleZh:'益和電子電動車應用電子報', titleEn:'Microtest EV Application EDM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/edm/5g_edm_microtest.jpg' }
+      { category:'graphic', titleZh:'益和電子客製化電子報', titleEn:'Microtest Custom EDM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/edm/edm_microtest.jpg', thumb:'assets/img/portfolio-thumbs/edm_microtest.jpg' },
+      { category:'graphic', titleZh:'立昌工業古董車電子報', titleEn:'Li Chang Classic Car EDM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/edm/edm_lc.jpg', thumb:'assets/img/portfolio-thumbs/edm_lc.jpg' },
+      { category:'graphic', titleZh:'益和電子電動車應用電子報', titleEn:'Microtest EV Application EDM', image:'https://zahahyang.github.io/visual_portfolios/portfolio/graphic/edm/5g_edm_microtest.jpg', thumb:'assets/img/portfolio-thumbs/5g_edm_microtest.jpg' }
     ];
     const categoryNames = {
       digital: { zh:'數位體驗', en:'Digital Experience' },
@@ -517,7 +517,7 @@
       archiveGrid.innerHTML = items.map(item => {
         const title = isChinese() ? item.titleZh : item.titleEn;
         const category = categoryNames[item.category][isChinese() ? 'zh' : 'en'];
-        return `<button class="archive-card" type="button" data-index="${item.index}" data-category="${item.category}" aria-label="${title}"><img src="${item.image}" alt="${title}" loading="lazy"><div class="archive-info"><h3>${title}</h3><p>${category}</p></div></button>`;
+        return `<button class="archive-card" type="button" data-index="${item.index}" data-category="${item.category}" aria-label="${title}"><img src="${item.thumb || item.image}" alt="${title}" loading="lazy"><div class="archive-info"><h3>${title}</h3><p>${category}</p></div></button>`;
       }).join('');
       archiveGrid.querySelectorAll('.archive-card').forEach(card => card.addEventListener('click', () => openPortfolioItem(portfolioItems[Number(card.dataset.index)])));
     };
