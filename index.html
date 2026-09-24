@@ -7,7 +7,7 @@
   <title>Zahah Yang — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1b22'/%3E%3Cpath d='M13 22h24L16 43h27' fill='none' stroke='%239b87ff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -96,7 +96,7 @@
     html[lang="zh-Hant"] .section-intro h2 { line-height: 1.22; letter-spacing: 0; font-weight: 500; }
     .section-intro p { margin: 0; max-width: 640px; color: var(--muted); font-size: clamp(16px,1.4vw,18px); line-height: 1.65; }
     .work-list { display: grid; gap: 112px; }
-    .project { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(300px, .6fr); gap: 42px; align-items: center; }
+    .project { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(300px, .6fr); gap: 42px; align-items: center; content-visibility: auto; contain-intrinsic-size: auto 620px; }
     .project:nth-child(even) { grid-template-columns: minmax(300px, .6fr) minmax(0, 1.4fr); }
     .project:nth-child(even) .project-visual { order: 2; }
     .project-visual { position: relative; aspect-ratio: 16/10; overflow: hidden; background: #111; }
@@ -118,7 +118,7 @@
     .filter.active, .filter:hover { background: var(--accent); border-color: var(--accent); color: #16161c; }
     .archive-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
     .archive-count { margin: -22px 0 36px; color: var(--quiet); font-size: 13px; letter-spacing: .04em; }
-    .archive-card { width: 100%; padding: 0; color: inherit; font: inherit; text-align: left; cursor: zoom-in; background: rgba(255,255,255,.025); border: 1px solid var(--line); transition: transform .4s var(--ease-soft), border-color .25s, opacity .25s; }
+    .archive-card { width: 100%; padding: 0; color: inherit; font: inherit; text-align: left; cursor: zoom-in; background: rgba(255,255,255,.025); border: 1px solid var(--line); transition: transform .4s var(--ease-soft), border-color .25s, opacity .25s; content-visibility: auto; contain-intrinsic-size: auto 360px; }
     .archive-card[hidden] { display: none; }
     .archive-card:hover { transform: translateY(-5px); border-color: rgba(154,132,255,.55); }
     .archive-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; filter: saturate(.9); }
@@ -279,7 +279,7 @@
         <div class="work-list">
           <article class="project reveal">
             <a class="project-visual" href="https://zahahyang.github.io/visual_portfolios/portfolio/onepage/uno/index.html" target="_blank" rel="noreferrer">
-              <img src="assets/img/portfolio-display/02.jpg" alt="SKECHERS UNO campaign landing page" loading="lazy">
+              <img src="assets/img/portfolio-display/02.jpg?v=fast2" alt="SKECHERS UNO campaign landing page" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">01 / SKECHERS TAIWAN · 2022–2023</span>
@@ -294,7 +294,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="#archive" data-archive-filter="editorial">
-              <img src="assets/img/portfolio-display/27.jpg" alt="ShowDaily Medical Expo editorial design" loading="lazy">
+              <img src="assets/img/portfolio-display/27.jpg?v=fast2" alt="ShowDaily Medical Expo editorial design" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">02 / ECONOMIC DAILY NEWS × TAITRA · 2019–2021</span>
@@ -309,7 +309,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="#archive" data-archive-filter="visual">
-              <img src="assets/img/portfolio-display/09.jpg" alt="AAPEX auto parts event visual design" loading="lazy">
+              <img src="assets/img/portfolio-display/09.jpg?v=fast2" alt="AAPEX auto parts event visual design" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">03 / AAPEX · GLOBAL EXHIBITION</span>
@@ -324,7 +324,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="https://zahahyang.github.io/visual_portfolios/portfolio/onepage/Hyperion_Max/index.html" target="_blank" rel="noreferrer">
-              <img src="assets/img/portfolio-display/08.jpg" alt="Hyperion Max digital campaign" loading="lazy">
+              <img src="assets/img/portfolio-display/08.jpg?v=fast2" alt="Hyperion Max digital campaign" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">04 / BROOKS · DIGITAL CAMPAIGN</span>
@@ -517,8 +517,8 @@
       archiveGrid.innerHTML = items.map(item => {
         const title = isChinese() ? item.titleZh : item.titleEn;
         const category = categoryNames[item.category][isChinese() ? 'zh' : 'en'];
-        const thumb = `assets/img/portfolio-thumbs/${String(item.index + 1).padStart(2, '0')}.jpg`;
-        return `<button class="archive-card" type="button" data-index="${item.index}" data-category="${item.category}" aria-label="${title}"><img src="${thumb}" alt="${title}" loading="lazy"><div class="archive-info"><h3>${title}</h3><p>${category}</p></div></button>`;
+        const thumb = `assets/img/portfolio-thumbs/${String(item.index + 1).padStart(2, '0')}.jpg?v=fast2`;
+        return `<button class="archive-card" type="button" data-index="${item.index}" data-category="${item.category}" aria-label="${title}"><img src="${thumb}" alt="${title}" width="720" height="540" loading="lazy" decoding="async" fetchpriority="low"><div class="archive-info"><h3>${title}</h3><p>${category}</p></div></button>`;
       }).join('');
       archiveGrid.querySelectorAll('.archive-card').forEach(card => card.addEventListener('click', () => {
         const index = Number(card.dataset.index);
@@ -544,7 +544,7 @@
     const openPortfolioItem = (item, index) => {
       const lang = isChinese() ? 'zh' : 'en';
       const title = isChinese() ? item.titleZh : item.titleEn;
-      lightboxImage.src = `assets/img/portfolio-display/${String(index + 1).padStart(2, '0')}.jpg`;
+      lightboxImage.src = `assets/img/portfolio-display/${String(index + 1).padStart(2, '0')}.jpg?v=fast2`;
       lightboxImage.alt = title;
       lightboxCategory.textContent = categoryNames[item.category][lang];
       lightboxTitle.textContent = title;
