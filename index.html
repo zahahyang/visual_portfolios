@@ -279,7 +279,7 @@
         <div class="work-list">
           <article class="project reveal">
             <a class="project-visual" href="https://zahahyang.github.io/visual_portfolios/portfolio/onepage/uno/index.html" target="_blank" rel="noreferrer">
-              <img src="https://zahahyang.github.io/visual_portfolios/assets/img/onepage/2023UNO.jpg" alt="SKECHERS UNO campaign landing page" loading="lazy">
+              <img src="assets/img/portfolio-display/02.jpg" alt="SKECHERS UNO campaign landing page" loading="lazy">
             </a>
             <div>
               <span class="project-no">01 / SKECHERS TAIWAN · 2022–2023</span>
@@ -294,7 +294,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="#archive" data-archive-filter="editorial">
-              <img src="https://zahahyang.github.io/visual_portfolios/portfolio/showdaily/medical1.jpg" alt="ShowDaily Medical Expo editorial design" loading="lazy">
+              <img src="assets/img/portfolio-display/27.jpg" alt="ShowDaily Medical Expo editorial design" loading="lazy">
             </a>
             <div>
               <span class="project-no">02 / ECONOMIC DAILY NEWS × TAITRA · 2019–2021</span>
@@ -309,7 +309,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="#archive" data-archive-filter="visual">
-              <img src="https://zahahyang.github.io/visual_portfolios/portfolio/visual/autoparts/aapex.jpg" alt="AAPEX auto parts event visual design" loading="lazy">
+              <img src="assets/img/portfolio-display/09.jpg" alt="AAPEX auto parts event visual design" loading="lazy">
             </a>
             <div>
               <span class="project-no">03 / AAPEX · GLOBAL EXHIBITION</span>
@@ -324,7 +324,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="https://zahahyang.github.io/visual_portfolios/portfolio/onepage/Hyperion_Max/index.html" target="_blank" rel="noreferrer">
-              <img src="https://zahahyang.github.io/visual_portfolios/assets/img/onepage/2023Hyperion_Max.jpg" alt="Hyperion Max digital campaign" loading="lazy">
+              <img src="assets/img/portfolio-display/08.jpg" alt="Hyperion Max digital campaign" loading="lazy">
             </a>
             <div>
               <span class="project-no">04 / BROOKS · DIGITAL CAMPAIGN</span>
@@ -520,7 +520,10 @@
         const thumb = `assets/img/portfolio-thumbs/${String(item.index + 1).padStart(2, '0')}.jpg`;
         return `<button class="archive-card" type="button" data-index="${item.index}" data-category="${item.category}" aria-label="${title}"><img src="${thumb}" alt="${title}" loading="lazy"><div class="archive-info"><h3>${title}</h3><p>${category}</p></div></button>`;
       }).join('');
-      archiveGrid.querySelectorAll('.archive-card').forEach(card => card.addEventListener('click', () => openPortfolioItem(portfolioItems[Number(card.dataset.index)])));
+      archiveGrid.querySelectorAll('.archive-card').forEach(card => card.addEventListener('click', () => {
+        const index = Number(card.dataset.index);
+        openPortfolioItem(portfolioItems[index], index);
+      }));
     };
     filters.forEach(filter => filter.addEventListener('click', () => {
       filters.forEach(item => item.classList.toggle('active', item === filter));
@@ -538,10 +541,10 @@
     const lightboxDescription = document.getElementById('lightboxDescription');
     const lightboxLive = document.getElementById('lightboxLive');
     const lightboxClose = document.getElementById('lightboxClose');
-    const openPortfolioItem = item => {
+    const openPortfolioItem = (item, index) => {
       const lang = isChinese() ? 'zh' : 'en';
       const title = isChinese() ? item.titleZh : item.titleEn;
-      lightboxImage.src = item.image;
+      lightboxImage.src = `assets/img/portfolio-display/${String(index + 1).padStart(2, '0')}.jpg`;
       lightboxImage.alt = title;
       lightboxCategory.textContent = categoryNames[item.category][lang];
       lightboxTitle.textContent = title;
