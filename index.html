@@ -116,12 +116,12 @@
     .archive-toolbar { display: flex; flex-wrap: wrap; gap: 9px; margin: -20px 0 42px; }
     .filter { background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 9px 15px; cursor: pointer; transition: all .25s var(--ease-soft); }
     .filter.active, .filter:hover { background: var(--accent); border-color: var(--accent); color: #16161c; }
-    .archive-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+    .archive-grid { display: grid; grid-template-columns: repeat(4,1fr); grid-auto-rows: 1px; column-gap: 18px; }
     .archive-count { margin: -22px 0 36px; color: var(--quiet); font-size: 13px; letter-spacing: .04em; }
-    .archive-card { width: 100%; padding: 0; color: inherit; font: inherit; text-align: left; cursor: zoom-in; background: rgba(255,255,255,.025); border: 1px solid var(--line); transition: transform .4s var(--ease-soft), border-color .25s, opacity .25s; content-visibility: auto; contain-intrinsic-size: auto 360px; }
+    .archive-card { width: 100%; margin: 0 0 18px; padding: 0; align-self: start; color: inherit; font: inherit; text-align: left; cursor: zoom-in; background: rgba(255,255,255,.025); border: 1px solid var(--line); transition: transform .4s var(--ease-soft), border-color .25s, opacity .25s; }
     .archive-card[hidden] { display: none; }
     .archive-card:hover { transform: translateY(-5px); border-color: rgba(154,132,255,.55); }
-    .archive-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; filter: saturate(.9); }
+    .archive-card img { width: 100%; height: auto; object-fit: contain; filter: saturate(.9); }
     .archive-info { padding: 18px; }
     .archive-info h3 { margin: 0 0 7px; font-size: 16px; font-weight: 500; }
     .archive-info p { margin: 0; color: var(--quiet); font-size: 12px; }
@@ -279,7 +279,7 @@
         <div class="work-list">
           <article class="project reveal">
             <a class="project-visual" href="https://zahahyang.github.io/visual_portfolios/portfolio/onepage/uno/index.html" target="_blank" rel="noreferrer">
-              <img src="assets/img/portfolio-display/02.jpg?v=fast2" alt="SKECHERS UNO campaign landing page" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="assets/img/portfolio-display/02.jpg?v=ratio1" alt="SKECHERS UNO campaign landing page" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">01 / SKECHERS TAIWAN · 2022–2023</span>
@@ -294,7 +294,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="#archive" data-archive-filter="editorial">
-              <img src="assets/img/portfolio-display/27.jpg?v=fast2" alt="ShowDaily Medical Expo editorial design" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="assets/img/portfolio-display/27.jpg?v=ratio1" alt="ShowDaily Medical Expo editorial design" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">02 / ECONOMIC DAILY NEWS × TAITRA · 2019–2021</span>
@@ -309,7 +309,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="#archive" data-archive-filter="visual">
-              <img src="assets/img/portfolio-display/09.jpg?v=fast2" alt="AAPEX auto parts event visual design" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="assets/img/portfolio-display/09.jpg?v=ratio1" alt="AAPEX auto parts event visual design" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">03 / AAPEX · GLOBAL EXHIBITION</span>
@@ -324,7 +324,7 @@
 
           <article class="project reveal">
             <a class="project-visual" href="https://zahahyang.github.io/visual_portfolios/portfolio/onepage/Hyperion_Max/index.html" target="_blank" rel="noreferrer">
-              <img src="assets/img/portfolio-display/08.jpg?v=fast2" alt="Hyperion Max digital campaign" loading="lazy" decoding="async" fetchpriority="low">
+              <img src="assets/img/portfolio-display/08.jpg?v=ratio1" alt="Hyperion Max digital campaign" loading="lazy" decoding="async" fetchpriority="low">
             </a>
             <div>
               <span class="project-no">04 / BROOKS · DIGITAL CAMPAIGN</span>
@@ -510,6 +510,12 @@
     const filters = [...document.querySelectorAll('.filter')];
     let activeFilter = 'all';
     const isChinese = () => root.dataset.lang === 'zh';
+    const sizeArchiveCard = card => {
+      card.style.gridRowEnd = 'auto';
+      requestAnimationFrame(() => {
+        card.style.gridRowEnd = `span ${Math.ceil(card.getBoundingClientRect().height + 18)}`;
+      });
+    };
     const renderArchive = (filter = 'all') => {
       activeFilter = filter;
       const items = portfolioItems.map((item,index) => ({...item,index})).filter(item => filter === 'all' || item.category === filter);
@@ -517,14 +523,24 @@
       archiveGrid.innerHTML = items.map(item => {
         const title = isChinese() ? item.titleZh : item.titleEn;
         const category = categoryNames[item.category][isChinese() ? 'zh' : 'en'];
-        const thumb = `assets/img/portfolio-thumbs/${String(item.index + 1).padStart(2, '0')}.jpg?v=fast2`;
-        return `<button class="archive-card" type="button" data-index="${item.index}" data-category="${item.category}" aria-label="${title}"><img src="${thumb}" alt="${title}" width="720" height="540" loading="lazy" decoding="async" fetchpriority="low"><div class="archive-info"><h3>${title}</h3><p>${category}</p></div></button>`;
+        const thumb = `assets/img/portfolio-thumbs/${String(item.index + 1).padStart(2, '0')}.jpg?v=ratio1`;
+        return `<button class="archive-card" type="button" data-index="${item.index}" data-category="${item.category}" aria-label="${title}"><img src="${thumb}" alt="${title}" width="720" loading="lazy" decoding="async" fetchpriority="low"><div class="archive-info"><h3>${title}</h3><p>${category}</p></div></button>`;
       }).join('');
-      archiveGrid.querySelectorAll('.archive-card').forEach(card => card.addEventListener('click', () => {
-        const index = Number(card.dataset.index);
-        openPortfolioItem(portfolioItems[index], index);
-      }));
+      archiveGrid.querySelectorAll('.archive-card').forEach(card => {
+        const image = card.querySelector('img');
+        if (image.complete) sizeArchiveCard(card);
+        else image.addEventListener('load', () => sizeArchiveCard(card), { once: true });
+        card.addEventListener('click', () => {
+          const index = Number(card.dataset.index);
+          openPortfolioItem(portfolioItems[index], index);
+        });
+      });
     };
+    let archiveResizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(archiveResizeTimer);
+      archiveResizeTimer = setTimeout(() => archiveGrid.querySelectorAll('.archive-card').forEach(sizeArchiveCard), 120);
+    });
     filters.forEach(filter => filter.addEventListener('click', () => {
       filters.forEach(item => item.classList.toggle('active', item === filter));
       renderArchive(filter.dataset.filter);
@@ -544,7 +560,7 @@
     const openPortfolioItem = (item, index) => {
       const lang = isChinese() ? 'zh' : 'en';
       const title = isChinese() ? item.titleZh : item.titleEn;
-      lightboxImage.src = `assets/img/portfolio-display/${String(index + 1).padStart(2, '0')}.jpg?v=fast2`;
+      lightboxImage.src = `assets/img/portfolio-display/${String(index + 1).padStart(2, '0')}.jpg?v=ratio1`;
       lightboxImage.alt = title;
       lightboxCategory.textContent = categoryNames[item.category][lang];
       lightboxTitle.textContent = title;
