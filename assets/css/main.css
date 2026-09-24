@@ -1,29 +1,40 @@
-
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Cardo",  sans-serif;
-  --nav-font: "Inter",  sans-serif; 
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Cardo", sans-serif;
+  --nav-font: "Inter", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #000000; /* Background color for the entire website, including individual sections */
-  --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #C9A961; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #000000;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #fafafa;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #C9A961;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #1a1a1a;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.5);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: rgba(255, 255, 255, 0.5); /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(255, 255, 255, 0.5);
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #1a1a1a;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #1a1a1a;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: rgba(255, 255, 255, 0.5);
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ffffff;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -1363,27 +1374,32 @@ section,
 # News css 
 --------------------------------------------------------------*/
 .main_logo {
-  width:12.5%;
+  width: 12.5%;
   margin-left: -30%;
   margin-top: 10px;
 }
+
 .main_logo img {
   max-height: none;
   width: 100%;
 }
-p.title{
+
+p.title {
   font-size: 32px;
   font-family: 'Cardo';
 }
-p.scrb{
+
+p.scrb {
   line-height: 30px;
 }
-p.information{
+
+p.information {
   line-height: 30px;
   letter-spacing: 1px;
   font-size: 15px;
   padding-left: 10px;
 }
+
 .page-title .heading .cta-btn {
   color: var(--default-color);
   background: var(--accent-color);
@@ -1397,10 +1413,12 @@ p.information{
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-p.service{
+
+p.service {
   line-height: 30px;
   margin-top: 20px;
 }
+
 .service-item p.service_title {
   font-size: 30px;
   font-weight: 600;
@@ -1408,35 +1426,42 @@ p.service{
   padding-bottom: 30px;
   color: var(--accent-color);
 }
+
 .service-item p.service_information {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 32px;
 }
-.index_geocan img{
+
+.index_geocan img {
   width: 95%;
 }
-p.index_title{
+
+p.index_title {
   font-family: var(--heading-font);
   font-size: 67px;
   color: var(--accent-color);
   margin-bottom: 15px;
 }
-p.index_title1{
+
+p.index_title1 {
   font-size: 32px;
   color: var(--heading-color);
   font-weight: 700;
   margin-top: -15px;
 }
-.index_information{
+
+.index_information {
   margin-top: 120px;
 }
-.index_information hr{
+
+.index_information hr {
   border: 1.5px solid #ffffff;
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 p.index_information_1 {
   width: 85%;
   font-size: 1.1rem;
@@ -1444,26 +1469,31 @@ p.index_information_1 {
   letter-spacing: 1px;
   margin-bottom: 60px;
 }
-.index_sub_title{
+
+.index_sub_title {
   padding-bottom: 120px;
   padding-top: 60px;
 }
-p.index_subtitle{
-  font-size:4em;
+
+p.index_subtitle {
+  font-size: 4em;
   font-family: var(--heading-font);
 }
-.index_sub_inf hr{
+
+.index_sub_inf hr {
   border: 1.5px solid #ffffff;
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 p.index-service {
   font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 2.2;
   margin-bottom: 60px;
 }
+
 a.cta-btn.contact {
   color: var(--contrast-color);
   border: 1px solid var(--contrast-color);
@@ -1475,30 +1505,35 @@ a.cta-btn.contact:hover {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+
 @media screen and (min-width: 1200px) {
   .navmenu {
-      padding: 0;
-      margin-left: -17%;
+    padding: 0;
+    margin-left: -17%;
   }
 }
+
 /*--------------------------------------------------------------
 # Showdaily CSS#
 --------------------------------------------------------------*/
-h2.showdaily_title{
-  color:yellow;
+h2.showdaily_title {
+  color: yellow;
 }
-p.showdaily_des{
+
+p.showdaily_des {
   letter-spacing: 1px;
   margin-top: 30px;
   font-size: 18px;
   font-weight: 800;
 }
-p.showdaily_title_1{
+
+p.showdaily_title_1 {
   color: yellow;
   font-size: 20px;
   font-weight: 900;
 }
-li.showdaily_information{
+
+li.showdaily_information {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1511,12 +1546,14 @@ li.showdaily_information{
   font-size: 40px;
   padding-bottom: 20px;
 }
-.cta-btn.service{
+
+.cta-btn.service {
   margin-top: 30px;
 
 }
-.cta-btn.service:hover{
- color: #ffffff; 
+
+.cta-btn.service:hover {
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -1588,23 +1625,29 @@ li.showdaily_information{
     margin-left: -10%;
     margin-top: 5px;
   }
+
   .index_information {
     margin-top: 40px;
   }
+
   p.index_title {
     font-size: 51px;
   }
+
   p.index_title1 {
     font-size: 27px;
   }
+
   p.index_information_1 {
     font-size: 1rem;
     line-height: 2;
     width: 95%;
   }
+
   p.index_subtitle {
     font-size: 3em;
   }
+
   p.index-service {
     font-size: 1rem;
     line-height: 2;
@@ -1614,81 +1657,100 @@ li.showdaily_information{
 /*--------------------------------------------------------------
 # RWD CSS# Mobile Size
 --------------------------------------------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
   .main_logo {
     width: 40%;
     margin-left: 1px;
     margin-top: 1px;
   }
-  section.gallery-details_1.section.banner{
+
+  section.gallery-details_1.section.banner {
     padding: 30px 0;
   }
-  section.heros.section{
+
+  section.heros.section {
     padding: 30px 0;
   }
-  .index_geocan{
+
+  .index_geocan {
     margin-left: 20px;
   }
-  .index_information{
+
+  .index_information {
     width: 98%;
     margin: 30px;
 
   }
+
   p.index_title {
     font-size: 43px;
   }
+
   p.index_title1 {
     font-size: 24px;
   }
+
   p.index_information_1 {
     font-size: 0.95rem;
   }
+
   p.index_subtitle {
     font-size: 2.5em;
     font-family: var(--heading-font);
   }
+
   p.index-service {
     font-size: 0.95rem;
     letter-spacing: 1px;
     line-height: 2;
     margin-bottom: -10px;
   }
-  .contact_btns{
+
+  .contact_btns {
     margin-top: 50px;
   }
+
   p.service {
     padding: 20px;
     line-height: 30px;
     margin-top: 20px;
   }
+
   .gallery-details .portfolio-description h2 {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
     margin-left: 5%;
   }
-  p.showdaily_des{
+
+  p.showdaily_des {
     width: 85%;
     margin-left: 5%
   }
-  p.showdaily_title_1{
+
+  p.showdaily_title_1 {
     margin-left: 5%;
   }
-  p.showdaily_des_1{
+
+  p.showdaily_des_1 {
     margin-left: 5%;
   }
-  p.showdaily_des{
+
+  p.showdaily_des {
     width: 85%;
     margin-left: 10%;
   }
-  .portfolio-info{
+
+  .portfolio-info {
     margin-top: 5%;
     margin-left: 5%;
   }
-  ul.showdaily_showcase{
+
+  ul.showdaily_showcase {
     width: 85%;
   }
 }
+
 /* 1/10 Page Not Found*/
 
 p.page_not_found {
@@ -1710,10 +1772,312 @@ p.page_not_found_2 {
   text-align: center;
 }
 
+/* ===== CASE STUDY PAGE ===== */
+.case-study {
+  padding: 60px 0 80px;
+  background: #FFFFFF;
+}
+
+.case-study .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.case-hero {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+}
+
+.case-eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #B8860B;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.case-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1F2937;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.case-subtitle {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5C4A3A;
+  margin-bottom: 24px;
+}
+
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.case-tag {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #B8860B;
+  background: rgba(184, 134, 11, 0.08);
+  padding: 6px 14px;
+  border-radius: 16px;
+}
+
+/* Cover image */
+.case-cover {
+  margin: 0 -20px 48px;
+}
+
+.case-cover img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.case-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.case-image-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Sections */
+.case-section {
+  margin-bottom: 48px;
+}
+
+.case-section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.case-section-icon {
+  color: #B8860B;
+  font-size: 14px;
+}
+
+.case-section-body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1F2937;
+}
+
+.case-section-body p {
+  margin-bottom: 16px;
+}
+
+.case-section-body strong {
+  color: #1F2937;
+  font-weight: 600;
+}
+
+/* Lists */
+.case-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.case-list li {
+  padding-left: 24px;
+  margin-bottom: 12px;
+  position: relative;
+  line-height: 1.7;
+}
+
+.case-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #B8860B;
+  font-weight: 500;
+}
+
+.case-numbered-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  counter-reset: case-counter;
+}
+
+.case-numbered-list li {
+  padding-left: 36px;
+  margin-bottom: 16px;
+  position: relative;
+  line-height: 1.7;
+  counter-increment: case-counter;
+}
+
+.case-numbered-list li::before {
+  content: counter(case-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  color: #B8860B;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+/* Quotes */
+.case-quote {
+  border-left: 3px solid #B8860B;
+  padding: 12px 24px;
+  margin: 24px 0;
+  background: rgba(184, 134, 11, 0.04);
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+  color: #5C4A3A;
+}
+
+.case-quote em {
+  font-style: italic;
+  color: #1F2937;
+  font-size: 18px;
+}
+
+/* Axis (decision sub-blocks) */
+.case-axis {
+  margin: 24px 0;
+  padding: 20px 24px;
+  background: #FAF7F2;
+  border-radius: 8px;
+  border-left: 3px solid #B8860B;
+}
+
+.case-axis-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #B8860B;
+  margin-bottom: 12px;
+}
+
+/* Impact section */
+.case-impact .case-section-body {
+  display: grid;
+  gap: 16px;
+}
+
+.impact-card {
+  background: #FAF7F2;
+  border: 1px solid rgba(184, 134, 11, 0.15);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.impact-card-highlight {
+  background: #FFFFFF;
+  border: 2px solid #D4A017;
+}
+
+.impact-number {
+  font-size: 36px;
+  font-weight: 800;
+  color: #D4A017;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.impact-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 8px;
+}
+
+.impact-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5C4A3A;
+  margin-bottom: 0;
+}
+
+/* Reflection */
+.case-reflection-quote {
+  background: linear-gradient(to right, rgba(184, 134, 11, 0.06), transparent);
+  border-left: 4px solid #B8860B;
+  padding: 24px 32px;
+  border-radius: 0 8px 8px 0;
+  margin: 24px 0;
+}
+
+.case-reflection-quote p {
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.case-reflection-quote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.case-footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(184, 134, 11, 0.2);
+}
+
+.case-info {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px 24px;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.case-info dt {
+  color: #B8860B;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.case-info dd {
+  color: #1F2937;
+  margin: 0;
+}
+
+.case-next-cta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
 
 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .case-title {
+    font-size: 28px;
+  }
 
+  .case-section-title {
+    font-size: 20px;
+  }
 
+  .case-info {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
 
+  .case-next-cta {
+    flex-direction: column;
+  }
 
-
+  .impact-number {
+    font-size: 28px;
+  }
+}
